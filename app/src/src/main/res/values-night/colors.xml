@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark (night) palette -->
+    <color name="background">#0E0E10</color>
+    <color name="surface">#18181B</color>
+    <color name="surface_alt">#212124</color>
+    <color name="border">#2A2A2E</color>
+    <color name="text_primary">#F5F5F7</color>
+    <color name="text_secondary">#9B9BA3</color>
+
+    <!-- Brand -->
+    <color name="accent_red">#FF3B41</color>
+    <color name="accent_red_dark">#E31E24</color>
+    <color name="accent_red_soft">#3A1518</color>
+
+    <!-- Green / Yellow optimal-settings tags -->
+    <color name="tag_green">#2ECC71</color>
+    <color name="tag_green_bg">#123321</color>
+    <color name="tag_yellow">#F5C518</color>
+    <color name="tag_yellow_bg">#332B0E</color>
+
+    <!-- Glass overlay tuned for dark backgrounds -->
+    <color name="glass_fill">#1FFFFFFF</color>
+    <color name="glass_border">#33FFFFFF</color>
+    <color name="glass_highlight">#26FFFFFF</color>
+    <color name="glass_yellow_fill">#33F5C518</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

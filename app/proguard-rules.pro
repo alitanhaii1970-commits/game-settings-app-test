@@ -1,0 +1,4 @@
+-keep class com.gamesettings.app.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class com.google.firebase.** { *; }

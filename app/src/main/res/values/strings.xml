@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PC Max Test</string>
+    <string name="search_hint">جستجوی بازی…</string>
+    <string name="empty_games">هنوز بازی‌ای اضافه نشده</string>
+    <string name="green_settings">تنظیمات بهینه سبز</string>
+    <string name="yellow_settings">تنظیمات بهینه زرد</string>
+    <string name="no_green_settings">تنظیمات سبز ثبت نشده</string>
+    <string name="no_yellow_settings">تنظیمات زرد ثبت نشده</string>
+    <string name="settings_title">تنظیمات</string>
+    <string name="settings_language">زبان برنامه</string>
+    <string name="settings_font">فونت برنامه</string>
+    <string name="lang_fa">فارسی</string>
+    <string name="lang_en">English</string>
+    <string name="about_title">درباره</string>
+    <string name="loading">در حال بارگذاری…</string>
+    <string name="error_loading">خطا در دریافت اطلاعات</string>
+    <string name="retry">تلاش دوباره</string>
+
+    <!-- Onboarding -->
+    <string name="onboard_welcome_title">به PC Max خوش آمدید</string>
+    <string name="onboard_welcome_subtitle">تنظیمات بهینه بازی‌ها، همیشه در دسترس شما</string>
+    <string name="onboard_start">شروع کنید</string>
+    <string name="onboard_lang_title">زبان برنامه را انتخاب کنید</string>
+    <string name="onboard_lang_subtitle">می‌توانید بعداً از تنظیمات آن را تغییر دهید</string>
+    <string name="onboard_next">بعدی</string>
+    <string name="onboard_finish">شروع کنید</string>
+    <string name="youtube_hint">برای دیدن تنظیمات این بازی روی لینک یوتیوب کلیک کنید</string>
+    <string name="watch_on_youtube">مشاهده در یوتیوب</string>
+    <string name="check_for_update">بررسی آپدیت</string>
+    <string name="checking_for_update">در حال بررسی…</string>
+    <string name="up_to_date">شما به‌روز هستید ✅</string>
+    <string name="update_available">نسخه‌ی جدید پیدا شد، در حال دانلود…</string>
+    <string name="update_check_failed">بررسی آپدیت ناموفق بود</string>
+    <string name="version_label">نسخه‌ی فعلی: %1$s</string>
+    <string name="settings_system_power">قدرت سیستم شما (کامپیوتر)</string>
+    <string name="system_tier_weak">ضعیف</string>
+    <string name="system_tier_medium">متوسط</string>
+    <string name="system_tier_strong">قوی</string>
+    <string name="onboard_tier_title">قدرت سیستم شما (کامپیوتر) چطوره؟</string>
+    <string name="onboard_tier_subtitle">بر این اساس، توی هر بازی بهت نشون می‌دیم کدوم تنظیمات مناسب‌تره</string>
+</resources>

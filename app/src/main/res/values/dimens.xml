@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        سیستم فاصله‌گذاری مرکزی (Design Tokens) — طبق پروژه‌ی فعلی که همین مقیاس رو
+        به‌طور طبیعی رعایت کرده: 4، 6، 8، 10، 12، 14، 16، 18، 20، 24، 28، 32، 48، 56
+        این فایل مرجع رسمی این مقیاسه؛ مقادیر جدید در layout ها باید از همین طیف باشن.
+    -->
+    <dimen name="spacing_xxs">4dp</dimen>
+    <dimen name="spacing_xs">8dp</dimen>
+    <dimen name="spacing_s">12dp</dimen>
+    <dimen name="spacing_m">16dp</dimen>
+    <dimen name="spacing_l">20dp</dimen>
+    <dimen name="spacing_xl">24dp</dimen>
+    <dimen name="spacing_xxl">32dp</dimen>
+
+    <!-- شعاع گوشه‌ها بر اساس اهمیت/نوع عنصر -->
+    <dimen name="radius_chip">8dp</dimen>
+    <dimen name="radius_button">14dp</dimen>
+    <dimen name="radius_card">16dp</dimen>
+    <dimen name="radius_dialog">20dp</dimen>
+
+    <!-- اندازه‌ی هدف لمسی استاندارد (حداقل توصیه‌شده‌ی اندروید: 48dp) -->
+    <dimen name="touch_target_min">48dp</dimen>
+    <dimen name="icon_button_size">44dp</dimen>
+
+    <!--
+        مقیاس تایپوگرافی — طبق مقادیری که پروژه از قبل به‌طور طبیعی استفاده می‌کنه.
+        این هفت اندازه، سلسله‌مراتب متن کل برنامه رو پوشش می‌ده؛ اندازه‌ی جدیدی
+        اضافه نکنید مگر دلیل طراحی مشخصی داشته باشه.
+    -->
+    <dimen name="text_caption">13sp</dimen>
+    <dimen name="text_body_small">14sp</dimen>
+    <dimen name="text_body">15sp</dimen>
+    <dimen name="text_title_small">16sp</dimen>
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="text_headline_small">22sp</dimen>
+    <dimen name="text_headline">24sp</dimen>
+</resources>

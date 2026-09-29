@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light (day) palette -->
+    <color name="background">#F5F5F7</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_alt">#EFEFF2</color>
+    <color name="border">#E2E2E6</color>
+    <color name="text_primary">#161618</color>
+    <color name="text_secondary">#6C6C74</color>
+
+    <!-- Brand -->
+    <color name="accent_red">#E31E24</color>
+    <color name="accent_red_dark">#B4151A</color>
+    <color name="accent_red_soft">#FBE1E2</color>
+
+    <!-- Green / Yellow optimal-settings tags -->
+    <color name="tag_green">#1E9E52</color>
+    <color name="tag_green_bg">#E3F6EA</color>
+    <color name="tag_yellow">#B38600</color>
+    <color name="tag_yellow_bg">#FBF1D6</color>
+
+    <!-- Glass overlay tuned for light backgrounds -->
+    <color name="glass_fill">#B3FFFFFF</color>
+    <color name="glass_border">#4DFFFFFF</color>
+    <color name="glass_highlight">#66FFFFFF</color>
+    <color name="glass_yellow_fill">#4DF5C518</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
