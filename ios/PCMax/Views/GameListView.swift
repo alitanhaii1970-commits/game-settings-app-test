@@ -45,8 +45,13 @@ struct GameListView: View {
             }
         }
         .navigationBarHidden(true)
-        .navigationDestination(item: $selectedGame) { game in
-            GameDetailView(game: game)
+        .navigationDestination(isPresented: Binding(
+            get: { selectedGame != nil },
+            set: { if !$0 { selectedGame = nil } }
+        )) {
+            if let game = selectedGame {
+                GameDetailView(game: game)
+            }
         }
         .fullScreenCover(isPresented: $showSettings) {
             SettingsView()
