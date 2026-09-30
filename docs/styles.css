@@ -1,0 +1,197 @@
+/* PC Max — نسخه وب. رنگ‌ها و ابعاد دقیقاً از نسخه‌ی SwiftUI/اندروید */
+@font-face{font-family:'Vazirmatn';font-weight:400;font-display:swap;src:url(fonts/vazirmatn-regular.woff2) format('woff2')}
+@font-face{font-family:'Vazirmatn';font-weight:700;font-display:swap;src:url(fonts/vazirmatn-bold.woff2) format('woff2')}
+@font-face{font-family:'Sahel';font-weight:400;font-display:swap;src:url(fonts/sahel-regular.woff2) format('woff2')}
+@font-face{font-family:'Sahel';font-weight:700;font-display:swap;src:url(fonts/sahel-bold.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:400;font-display:swap;src:url(fonts/montserrat-regular.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:700;font-display:swap;src:url(fonts/montserrat-bold.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-weight:400;font-display:swap;src:url(fonts/inter-regular.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-weight:700;font-display:swap;src:url(fonts/inter-bold.woff2) format('woff2')}
+
+:root{
+  --bg:#0E0E10;--surface:#18181B;--surface-alt:#212124;--border:#2A2A2E;
+  --text:#F5F5F7;--text2:#9B9BA3;
+  --red:#FF3B41;--red-dark:#E31E24;--red-soft:#3A1518;
+  --green:#2ECC71;--green-bg:#123321;--yellow:#F5C518;--yellow-bg:#332B0E;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --sat:env(safe-area-inset-top,0px);--sab:env(safe-area-inset-bottom,0px);
+  --dir:1;
+}
+:root[dir=rtl]{--dir:-1}
+
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:var(--font);
+  -webkit-text-size-adjust:100%;text-size-adjust:100%;overscroll-behavior:none;-webkit-font-smoothing:antialiased}
+body{position:fixed;inset:0;overflow:hidden}
+button{font:inherit;color:inherit;cursor:pointer;-webkit-appearance:none;appearance:none}
+svg{display:block}
+
+/* ---------- صفحه‌ها ---------- */
+.view{position:absolute;inset:0;display:flex;flex-direction:column;background:var(--bg);
+  padding-top:var(--sat);visibility:hidden;opacity:0;pointer-events:none;
+  transform:translateX(calc(var(--dir) * 28px));
+  transition:opacity .26s ease,transform .26s ease,visibility 0s linear .26s}
+.view.active{visibility:visible;opacity:1;pointer-events:auto;transform:none;
+  transition:opacity .26s ease,transform .26s ease,visibility 0s}
+.scroll{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.pad{padding:16px 16px calc(24px + var(--sab))}
+
+/* ---------- نوار بالا و دکمه‌های گرد ---------- */
+.topbar{display:flex;align-items:center;gap:12px;padding:8px 16px 10px;flex:none}
+.topbar h1{margin:0;flex:1;min-width:0;font-size:20px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rbtn{width:44px;height:44px;flex:none;border-radius:50%;background:var(--surface);border:1px solid var(--border);
+  color:var(--text);display:grid;place-items:center;padding:0;
+  transition:transform .25s cubic-bezier(.3,1.5,.6,1),opacity .2s}
+.rbtn:active{transform:scale(.93)}
+.rbtn.red{color:var(--red)}
+.rbtn:disabled{opacity:.4;pointer-events:none}
+.rbtn svg{width:20px;height:20px}
+.flip{display:contents}
+:root[dir=rtl] .flip svg{transform:scaleX(-1)}
+.spinning svg{animation:rot .5s ease-out}
+@keyframes rot{to{transform:rotate(360deg)}}
+
+/* ---------- لیست ---------- */
+.head{display:flex;align-items:center;gap:10px;padding:8px 16px 12px;flex:none}
+.head img{width:34px;height:34px;border-radius:10px}
+.head h1{margin:0;flex:1;font-size:22px;font-weight:700}
+.head .rbtn{margin-inline-start:0}
+.search{display:flex;align-items:center;gap:10px;margin:0 16px 12px;padding:0 16px;flex:none;
+  background:var(--surface);border:1px solid var(--border);border-radius:16px}
+.search svg{width:17px;height:17px;color:var(--text2);flex:none}
+.search input{flex:1;min-width:0;background:none;border:0;outline:none;color:var(--text);
+  font:inherit;font-size:16px;padding:12px 0}
+.search input::placeholder{color:var(--text2)}
+.list{padding:0 16px calc(16px + var(--sab));display:flex;flex-direction:column;gap:10px}
+.row{display:flex;align-items:center;gap:14px;width:100%;padding:12px;text-align:start;
+  background:var(--surface);border:1px solid var(--border);border-radius:14px}
+.row .thumb{position:relative;width:56px;height:56px;flex:none;border-radius:12px;overflow:hidden;background:var(--surface-alt)}
+.row .name{flex:1;min-width:0;font-size:16px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .chev{color:var(--text2)}
+.row .chev svg{width:14px;height:14px}
+.press{transition:transform .25s cubic-bezier(.3,1.5,.6,1),opacity .2s}
+.press:active{transform:scale(.97);opacity:.92}
+.center{min-height:60%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:32px;text-align:center}
+.msg{font-size:15px;color:var(--text2);line-height:1.7}
+.pill{background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:10px 24px;font-size:13px;font-weight:700}
+.spinner{width:28px;height:28px;border:3px solid var(--border);border-top-color:var(--red);border-radius:50%;animation:rot .8s linear infinite}
+
+/* ---------- تصاویر ---------- */
+.imgwrap{position:absolute;inset:0;background:var(--surface-alt)}
+.imgwrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease}
+.imgwrap img.ok{opacity:1}
+.imgwrap .ph{position:absolute;inset:0;display:none;place-items:center;color:var(--text2)}
+.imgwrap.err .ph{display:grid}
+.imgwrap .ph svg{width:22px;height:22px}
+.imgwrap .sp{position:absolute;inset:0;display:none;place-items:center}
+.hero .imgwrap:not(.done):not(.err) .sp{display:grid}
+.sp i{width:24px;height:24px;border:3px solid var(--border);border-top-color:var(--text2);border-radius:50%;animation:rot .8s linear infinite}
+
+/* ---------- جزئیات بازی ---------- */
+.hero{position:relative;height:200px;border-radius:12px;overflow:hidden;background:var(--surface-alt);cursor:pointer;
+  transition:transform .12s ease}
+.hero:active{transform:scale(.98)}
+.hero .expand{position:absolute;inset-block-end:10px;inset-inline-end:10px;width:32px;height:32px;border-radius:50%;
+  background:rgba(0,0,0,.45);display:grid;place-items:center;color:#fff}
+.hero .expand svg{width:16px;height:16px}
+.blocks{margin-top:20px;display:flex;flex-direction:column;gap:16px}
+.block{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+.tag{align-self:flex-start;font-size:13px;font-weight:700;padding:6px 12px;border-radius:8px;
+  color:var(--c);background:var(--cbg);border:1px solid var(--c)}
+.card{padding:16px;background:var(--surface);border:1px solid var(--border);border-radius:14px;
+  font-size:15px;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere}
+.card.glow{border-color:var(--c);box-shadow:0 0 0 .5px var(--c),0 0 20px -8px var(--c);animation:pulse 3.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.018)}}
+@media (prefers-reduced-motion:reduce){.card.glow{animation:none}.view,.view.active{transition:none}}
+.yt{margin-top:24px;padding:28px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;
+  background:var(--surface);border:1px solid var(--border);border-radius:16px}
+.yt .ico{width:52px;height:52px;color:var(--red)}
+.yt p{margin:0;font-size:15px;line-height:1.75;color:var(--text2)}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:16px;border:0;border-radius:18px;
+  color:#fff;font-size:16px;font-weight:700;text-decoration:none;
+  background:linear-gradient(180deg,var(--red),var(--red-dark));box-shadow:0 6px 14px rgba(255,59,65,.35);
+  transition:transform .25s cubic-bezier(.3,1.5,.6,1)}
+.btn:active{transform:scale(.96)}
+.btn svg{width:16px;height:16px}
+.yt .btn{max-width:260px}
+
+/* ---------- پیش‌نمایش تمام‌صفحه ---------- */
+#preview{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.92);display:flex;align-items:center;justify-content:center;
+  padding:calc(20px + var(--sat)) 20px calc(20px + var(--sab));visibility:hidden;opacity:0;transition:opacity .26s ease,visibility 0s linear .26s}
+#preview.show{visibility:visible;opacity:1;transition:opacity .26s ease}
+#preview img{max-width:100%;max-height:100%;object-fit:contain;transform:scale(.92);transition:transform .26s ease}
+#preview.show img{transform:none}
+#previewClose{position:absolute;inset-block-start:calc(16px + var(--sat));inset-inline-end:16px;width:46px;height:46px;color:#fff}
+
+/* ---------- تنظیمات ---------- */
+.sec{font-size:13px;color:var(--text2);padding:20px 20px 8px}
+.sec.y{color:var(--yellow)}
+.radio{margin:0 16px;background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.radio.yellow{border:1.5px solid var(--yellow)}
+.opt{display:flex;align-items:center;gap:12px;width:100%;padding:14px 16px;background:none;border:0;
+  font-size:15px;text-align:start}
+.opt + .opt{border-top:1px solid var(--border)}
+.opt .lbl{flex:1;min-width:0}
+.opt .dot{width:20px;height:20px;border-radius:50%;border:2px solid var(--border);display:grid;place-items:center;flex:none}
+.opt.sel .dot{border-color:var(--red)}
+.opt.sel .dot::after{content:"";width:11px;height:11px;border-radius:50%;background:var(--red)}
+.opt .go{color:var(--text2)}
+.opt .go svg{width:14px;height:14px}
+.about{display:flex;flex-direction:column;align-items:center;gap:10px;padding:48px 0 calc(32px + var(--sab))}
+.about img{width:56px;height:56px;border-radius:14px}
+.about b{font-size:14px}
+.about small{font-size:12px;color:var(--text2)}
+.about .pill{margin-top:6px;color:var(--text)}
+
+/* ---------- ورود اولیه ---------- */
+.onb-body{flex:1;min-height:0;display:flex;flex-direction:column;padding:0 28px;animation:enter .32s ease both}
+@keyframes enter{from{opacity:0;transform:translateX(calc(var(--dir) * 32px))}to{opacity:1;transform:none}}
+.onb-welcome{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;text-align:center;padding:32px}
+.onb-welcome img{width:120px;height:120px;border-radius:26px}
+.onb-welcome h1{margin:0 0 10px;font-size:24px;font-weight:700}
+.onb-welcome p{margin:0;font-size:15px;color:var(--text2)}
+.onb-page{padding-top:56px;display:flex;flex-direction:column;gap:12px}
+.onb-head{text-align:center;padding-bottom:18px}
+.onb-head h2{margin:0 0 8px;font-size:22px;font-weight:700}
+.onb-head p{margin:0;font-size:14px;color:var(--text2);line-height:1.7}
+.ocard{display:flex;align-items:center;gap:14px;width:100%;padding:14px;text-align:start;
+  background:var(--surface);border:1px solid var(--border);border-radius:18px;
+  transition:background .2s,border-color .2s,box-shadow .2s,transform .25s cubic-bezier(.3,1.5,.6,1)}
+.ocard:active{transform:scale(.97)}
+.ocard.sel{background:rgba(58,21,24,.55);border-color:var(--red);box-shadow:0 0 0 .5px var(--red)}
+.ocard .t{flex:1;font-size:16px;font-weight:700}
+.ocard .sw{width:44px;height:44px;border-radius:14px;flex:none}
+.ocard .dot{width:24px;height:24px;border-radius:50%;border:2px solid var(--border);display:grid;place-items:center;flex:none;transition:border-color .2s}
+.ocard.sel .dot{border-color:var(--red)}
+.ocard.sel .dot::after{content:"";width:14px;height:14px;border-radius:50%;background:var(--red)}
+.dots{display:flex;justify-content:center;gap:6px;padding:0 0 20px}
+.dots i{display:block;width:8px;height:8px;border-radius:999px;background:var(--border);transition:width .25s ease,background .25s ease}
+.dots i.on{width:22px;background:var(--red)}
+.onb-foot{padding:0 28px calc(32px + var(--sab))}
+
+/* ---------- پنجره‌ها، شیت نصب، توست ---------- */
+.overlay{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;padding:32px}
+.overlay.show{display:flex;animation:fade .2s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.modal{width:100%;max-width:360px;padding:24px;display:flex;flex-direction:column;gap:16px;text-align:center;
+  background:var(--surface);border:1px solid var(--border);border-radius:20px}
+.modal h3{margin:0;font-size:18px}
+.modal p{margin:0;font-size:14px;line-height:1.75;color:var(--text2)}
+.modal .later{background:none;border:0;padding:4px;font-size:14px;color:var(--text2)}
+.sheet-wrap{align-items:flex-end;padding:0}
+.sheet{width:100%;padding:24px 24px calc(24px + var(--sab));background:var(--surface);border-top:1px solid var(--border);
+  border-radius:24px 24px 0 0;display:flex;flex-direction:column;gap:14px;animation:up .3s ease both}
+@keyframes up{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+.sheet h3{margin:0;font-size:18px}
+.sheet .sub{margin:0;font-size:14px;color:var(--text2);line-height:1.7}
+.steps{margin:4px 0 6px;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px}
+.steps li{display:flex;align-items:center;gap:12px;font-size:14px;line-height:1.6}
+.steps .n{width:28px;height:28px;flex:none;border-radius:50%;background:var(--red-soft);color:var(--red);
+  display:grid;place-items:center;font-weight:700;font-size:13px}
+.steps svg{display:inline-block;vertical-align:middle;width:18px;height:18px;color:var(--red);margin:0 2px}
+.sheet .btn{margin-top:4px}
+#toast{position:fixed;inset-inline:0;bottom:calc(24px + var(--sab));z-index:80;display:flex;justify-content:center;pointer-events:none}
+#toast span{max-width:calc(100% - 48px);padding:12px 18px;border-radius:999px;font-size:14px;font-weight:700;text-align:center;
+  background:var(--surface-alt);border:1px solid var(--border);box-shadow:0 4px 12px rgba(0,0,0,.4);
+  opacity:0;transform:translateY(16px);transition:opacity .3s ease,transform .3s ease}
+#toast.show span{opacity:1;transform:none}

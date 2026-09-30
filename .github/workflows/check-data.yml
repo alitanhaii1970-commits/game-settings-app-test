@@ -1,0 +1,47 @@
+name: Check data
+
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/check-data.yml']
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Firestore and image access from a browser origin
+        run: |
+          B='https://firestore.googleapis.com/v1/projects/pc-max-a0a4b/databases/(default)/documents/games'
+          O='https://alitanhaii1970-commits.github.io'
+          KEY='AIzaSyDloW_gBy_P7WZEBlEEa9wzOxX-PMmlvkQ'
+          for mode in nokey key; do
+            U="$B?pageSize=300"
+            if [ "$mode" = key ]; then U="$U&key=$KEY"; fi
+            code=$(curl -s -o r.json -D h.txt -w '%{http_code}' -H "Origin: $O" -H "Referer: $O/game-settings-app-test/" "$U")
+            acao=$(grep -i '^access-control-allow-origin' h.txt | tr -d '\r' | head -1)
+            n=$(python3 -c "import json;print(len(json.load(open('r.json')).get('documents',[])))" 2>/dev/null || echo '?')
+            err=$(python3 -c "import json;e=json.load(open('r.json')).get('error',{});print(e.get('status',''),(e.get('message','') or '')[:120])" 2>/dev/null || true)
+            echo "::notice title=firestore-$mode::HTTP $code | docs=$n | ${acao:-NO-ACAO-HEADER} | $err"
+            if [ "$code" = 200 ]; then cp r.json ok.json; fi
+          done
+          if [ -f ok.json ]; then
+          python3 - <<'PY'
+          import json, subprocess, urllib.parse
+          d = json.load(open('ok.json'))
+          docs = d.get('documents', [])
+          def sv(doc, k): return doc.get('fields', {}).get(k, {}).get('stringValue', '').strip()
+          imgs = [sv(x, 'imageUrl') for x in docs if sv(x, 'imageUrl')]
+          hosts = sorted({urllib.parse.urlparse(u).netloc for u in imgs})
+          fields = sorted({k for x in docs for k in x.get('fields', {})})
+          print(f"::notice title=data::games={len(docs)} withImage={len(imgs)} hosts={hosts} fields={fields} more={'nextPageToken' in d}")
+          seen = set()
+          for u in imgs:
+              h = urllib.parse.urlparse(u).netloc
+              if h in seen: continue
+              seen.add(h)
+              out = subprocess.run(['curl', '-sI', '-H', 'Origin: https://alitanhaii1970-commits.github.io', u], capture_output=True, text=True).stdout
+              lines = out.splitlines()
+              acao = next((l.strip() for l in lines if l.lower().startswith('access-control-allow-origin')), 'NO-ACAO')
+              print(f"::notice title=image-{h}::{lines[0].strip() if lines else 'no-response'} | {acao}")
+          PY
+          fi

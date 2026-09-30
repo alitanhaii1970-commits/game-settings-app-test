@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>PC Max</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0E0E10">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="PC Max — تنظیمات بهینه بازی‌ها برای کامپیوتر">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PC Max">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body style="background:#0E0E10">
+<div id="app">
+  <section class="view" id="v-onb"></section>
+  <section class="view" id="v-list"></section>
+  <section class="view" id="v-detail"></section>
+  <section class="view" id="v-settings"></section>
+</div>
+
+<div class="overlay" id="modal"></div>
+<div class="overlay sheet-wrap" id="sheet"></div>
+<div id="preview" aria-hidden="true">
+  <img alt="">
+  <button class="rbtn" id="previewClose" aria-label="close"></button>
+</div>
+<div id="toast"><span></span></div>
+
+<noscript><p style="color:#F5F5F7;text-align:center;padding:40px;font-family:sans-serif">برای استفاده از PC Max باید جاوااسکریپت فعال باشه.</p></noscript>
+<script src="app.js"></script>
+</body>
+</html>
