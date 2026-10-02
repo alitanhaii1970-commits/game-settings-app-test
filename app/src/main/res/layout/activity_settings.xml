@@ -61,7 +61,8 @@
             layout="@layout/view_theme_tiles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
 
         <!-- بخش زبان -->
         <TextView
