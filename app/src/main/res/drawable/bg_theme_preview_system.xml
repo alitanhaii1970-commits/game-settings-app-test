@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- نیمی روشن، نیمی تیره: یعنی «هماهنگ با گوشی» -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="36dp"
+        android:gravity="left|fill_vertical"
+        android:drawable="@drawable/bg_theme_half_light" />
+    <item
+        android:width="36dp"
+        android:gravity="right|fill_vertical"
+        android:drawable="@drawable/bg_theme_half_dark" />
+</layer-list>

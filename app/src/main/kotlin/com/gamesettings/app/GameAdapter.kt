@@ -1,5 +1,6 @@
 package com.gamesettings.app
 
+import android.os.SystemClock
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -13,8 +14,17 @@ class GameAdapter(
 
     private var items: List<Game> = emptyList()
 
-    fun submitList(newItems: List<Game>) {
+    /** لحظه‌ای که آخرین لیستِ «با انیمیشن ورود» ثبت شد؛ صفر یعنی بدون انیمیشن */
+    private var entranceStart = 0L
+
+    /**
+     * [animateEntrance] = true: کارت‌های اولین صفحه‌ی لیست یکی‌یکی (پلکانی) محو و بالا می‌آیند.
+     * فقط آیتم‌هایی که تا ۷۰۰ میلی‌ثانیه بعد از ثبت لیست ساخته می‌شوند انیمیشن می‌گیرند، پس
+     * اسکرول کردن بعدی هیچ انیمیشن اضافه‌ای ندارد.
+     */
+    fun submitList(newItems: List<Game>, animateEntrance: Boolean = false) {
         items = newItems
+        entranceStart = if (animateEntrance) SystemClock.uptimeMillis() else 0L
         notifyDataSetChanged()
     }
 
@@ -26,9 +36,19 @@ class GameAdapter(
 
     override fun onBindViewHolder(holder: GameViewHolder, position: Int) {
         holder.bind(items[position])
+        if (entranceStart != 0L && position < ENTRANCE_COUNT &&
+            SystemClock.uptimeMillis() - entranceStart < ENTRANCE_WINDOW_MS
+        ) {
+            Motion.riseIn(holder.itemView, position * 38L)
+        }
     }
 
     override fun getItemCount(): Int = items.size
+
+    private companion object {
+        const val ENTRANCE_COUNT = 14
+        const val ENTRANCE_WINDOW_MS = 700L
+    }
 
     class GameViewHolder(
         itemView: android.view.View,

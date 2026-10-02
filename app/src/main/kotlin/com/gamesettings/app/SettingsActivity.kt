@@ -4,10 +4,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.RadioButton
 import android.widget.RadioGroup
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.ImageButton
 
-class SettingsActivity : AppCompatActivity() {
+class SettingsActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AppPreferences.applyLanguage(AppPreferences.getLanguage(this))
@@ -24,8 +23,20 @@ class SettingsActivity : AppCompatActivity() {
         // فونت انتخابی فعلی را روی همین صفحه هم اعمال کن
         FontManager.applyToViewTree(this, rootView)
 
-        rootView.alpha = 0f
-        rootView.animate().alpha(1f).setDuration(260).start()
+        // ورود پلکانی بخش‌ها — فقط وقتی صفحه تازه باز می‌شود (نه بعد از عوض‌شدن تم یا زبان)
+        if (savedInstanceState == null) {
+            val content: android.view.ViewGroup = findViewById(R.id.settings_content)
+            for (i in 0 until minOf(content.childCount, 9)) {
+                Motion.riseIn(content.getChildAt(i), i * 45L, 12, 380L)
+            }
+        }
+
+        // انتخاب ظاهر برنامه: روشن / تیره / خودکار — با انیمیشن موج از نقطه‌ی لمس
+        ThemeManager.bindTiles(findViewById(R.id.theme_tiles), AppPreferences.getTheme(this)) { theme, tile ->
+            val loc = IntArray(2)
+            tile.getLocationOnScreen(loc)
+            ThemeManager.changeTheme(this, theme, loc[0] + tile.width / 2, loc[1] + tile.height / 2)
+        }
 
         backButton.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
 
@@ -146,6 +157,6 @@ class SettingsActivity : AppCompatActivity() {
 
     override fun finish() {
         super.finish()
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+        Motion.popBack(this)
     }
 }

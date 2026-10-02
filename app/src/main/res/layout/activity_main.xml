@@ -4,10 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background">
+    android:background="@drawable/bg_screen">
 
     <!-- نوار بالا -->
     <LinearLayout
+        android:id="@+id/header_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -89,12 +90,30 @@
             android:paddingHorizontal="16dp"
             android:paddingBottom="16dp" />
 
-        <ProgressBar
-            android:id="@+id/progress_bar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:indeterminateTint="@color/accent_red" />
+        <!-- اسکلت بارگذاری: جای خالی کارت‌ها تا رسیدن داده -->
+        <LinearLayout
+            android:id="@+id/skeleton_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:visibility="gone">
+
+            <include layout="@layout/item_game_skeleton" />
+
+            <include layout="@layout/item_game_skeleton" />
+
+            <include layout="@layout/item_game_skeleton" />
+
+            <include layout="@layout/item_game_skeleton" />
+
+            <include layout="@layout/item_game_skeleton" />
+
+            <include layout="@layout/item_game_skeleton" />
+
+            <include layout="@layout/item_game_skeleton" />
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/empty_text"

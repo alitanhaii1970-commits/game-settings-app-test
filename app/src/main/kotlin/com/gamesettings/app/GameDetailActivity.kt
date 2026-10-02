@@ -10,11 +10,10 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import coil.load
 
-class GameDetailActivity : AppCompatActivity() {
+class GameDetailActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AppPreferences.applyLanguage(AppPreferences.getLanguage(this))
@@ -24,8 +23,8 @@ class GameDetailActivity : AppCompatActivity() {
 
         val rootView = findViewById<View>(android.R.id.content)
         FontManager.applyToViewTree(this, rootView)
-        rootView.alpha = 0f
-        rootView.animate().alpha(1f).setDuration(280).start()
+        // انیمیشن‌های ورود فقط وقتی صفحه تازه باز می‌شود (نه بعد از عوض‌شدن تم)
+        val playEntrance = savedInstanceState == null
 
         val toolbar = findViewById<Toolbar>(R.id.detail_toolbar)
         setSupportActionBar(toolbar)
@@ -57,6 +56,15 @@ class GameDetailActivity : AppCompatActivity() {
 
         title = name
         toolbar.title = name
+
+        if (playEntrance) {
+            // عکس اصلی: کمی کوچک‌تر شروع می‌کند و جا می‌افتد
+            imageTapArea.alpha = 0f
+            imageTapArea.scaleX = 0.94f
+            imageTapArea.scaleY = 0.94f
+            imageTapArea.animate().alpha(1f).scaleX(1f).scaleY(1f).setDuration(480L)
+                .setInterpolator(android.view.animation.DecelerateInterpolator(1.6f)).start()
+        }
 
         image.load(imageUrl) {
             crossfade(400)
@@ -91,6 +99,7 @@ class GameDetailActivity : AppCompatActivity() {
 
         if (hasValidYoutubeLink) {
             // حالت یوتیوب انحصاری
+            if (playEntrance) Motion.riseIn(youtubeSection, 140L, 16, 460L)
             youtubeSection.visibility = View.VISIBLE
             greenSection.visibility = View.GONE
             yellowSection.visibility = View.GONE
@@ -133,16 +142,25 @@ class GameDetailActivity : AppCompatActivity() {
                 greenText.text = "برای این بازی هنوز تنظیماتی ثبت نشده."
             }
 
+            // ورود پلکانی بخش‌ها (بعد از عکس)
+            if (playEntrance) {
+                if (greenSection.visibility == View.VISIBLE) Motion.riseIn(greenSection, 140L, 16, 460L)
+                if (yellowSection.visibility == View.VISIBLE) Motion.riseIn(yellowSection, 240L, 16, 460L)
+            }
+
             // افکت درخشش روی بخشی که برای قدرت سیستمِ کاربر مناسب‌تره — فقط اگر
             // کاربر قبلاً قدرت سیستمش رو در تنظیمات انتخاب کرده باشه، و فقط روی
             // بخشی که واقعاً محتوا داره (سبز برای ضعیف/متوسط، زرد برای قوی)
             val systemTier = AppPreferences.getSystemTier(this)
             if (systemTier.isNotBlank()) {
                 val recommendGreen = systemTier != AppPreferences.TIER_STRONG
-                if (recommendGreen && greenSection.visibility == View.VISIBLE) {
+                val fallbackOnly = settingsGreen.isBlank() && settingsYellow.isBlank()
+                if (recommendGreen && greenSection.visibility == View.VISIBLE && !fallbackOnly) {
                     applyGlow(greenText, R.drawable.bg_card_glow_green)
+                    findViewById<View>(R.id.badge_green).visibility = View.VISIBLE
                 } else if (!recommendGreen && yellowSection.visibility == View.VISIBLE) {
                     applyGlow(yellowText, R.drawable.bg_card_glow_yellow)
+                    findViewById<View>(R.id.badge_yellow).visibility = View.VISIBLE
                 }
             }
         }
@@ -177,7 +195,7 @@ class GameDetailActivity : AppCompatActivity() {
 
     override fun finish() {
         super.finish()
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+        Motion.popBack(this)
     }
 
     override fun onDestroy() {

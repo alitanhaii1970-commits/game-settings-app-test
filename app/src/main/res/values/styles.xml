@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- تنها تم برنامه؛ تم روشن به‌طور کامل حذف شده -->
-    <style name="Theme.GameSettings" parent="Theme.AppCompat.NoActionBar">
+    <!-- تم برنامه: روشن / تیره / خودکار (DayNight)؛ انتخاب کاربر در AppPreferences ذخیره و با ThemeManager اعمال می‌شود -->
+    <style name="Theme.GameSettings" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="colorPrimary">@color/surface</item>
         <item name="colorPrimaryDark">@color/background</item>
         <item name="colorAccent">@color/accent_red</item>
         <item name="android:windowBackground">@color/background</item>
         <item name="android:statusBarColor">@color/background</item>
         <item name="android:navigationBarColor">@color/background</item>
-        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightStatusBar">@bool/light_system_bars</item>
     </style>
 
     <style name="SettingsRadio" parent="Widget.AppCompat.CompoundButton.RadioButton">

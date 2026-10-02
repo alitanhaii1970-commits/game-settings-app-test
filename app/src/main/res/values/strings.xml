@@ -39,4 +39,13 @@
     <string name="system_tier_strong">قوی</string>
     <string name="onboard_tier_title">قدرت سیستم شما (کامپیوتر) چطوره؟</string>
     <string name="onboard_tier_subtitle">بر این اساس، توی هر بازی بهت نشون می‌دیم کدوم تنظیمات مناسب‌تره</string>
+
+    <!-- Theme -->
+    <string name="settings_theme">ظاهر برنامه</string>
+    <string name="theme_light">روشن</string>
+    <string name="theme_dark">تیره</string>
+    <string name="theme_system">خودکار</string>
+    <string name="onboard_theme_title">ظاهر برنامه رو انتخاب کن</string>
+    <string name="onboard_theme_subtitle">روشن، تیره، یا هماهنگ با گوشیت — بعداً هم از تنظیمات عوض می‌شه</string>
+    <string name="recommended_for_you">پیشنهادی برای سیستم شما</string>
 </resources>

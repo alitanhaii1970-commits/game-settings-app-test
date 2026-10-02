@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- روی تم روشن، آیکون‌های نوار وضعیت باید تیره باشند -->
+    <bool name="light_system_bars">true</bool>
+</resources>

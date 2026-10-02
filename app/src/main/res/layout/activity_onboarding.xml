@@ -4,36 +4,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background">
+    android:background="@drawable/bg_screen">
 
     <ViewFlipper
         android:id="@+id/onboarding_flipper"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:inAnimation="@anim/onboard_page_in"
-        android:outAnimation="@anim/onboard_page_out">
+        android:layout_weight="1">
 
         <!-- ═══ صفحه ۱: خوش‌آمدگویی ═══ -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:clipChildren="false"
             android:orientation="vertical"
             android:gravity="center"
             android:padding="32dp">
 
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:src="@drawable/app_logo"
-                android:background="@drawable/bg_image_rounded"
-                android:clipToOutline="true"
-                android:contentDescription="PC Max" />
+            <FrameLayout
+                android:layout_width="240dp"
+                android:layout_height="190dp"
+                android:clipChildren="false">
+
+                <View
+                    android:id="@+id/welcome_glow"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_logo_glow" />
+
+                <ImageView
+                    android:id="@+id/welcome_logo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/app_logo"
+                    android:background="@drawable/bg_image_rounded"
+                    android:clipToOutline="true"
+                    android:elevation="6dp"
+                    android:contentDescription="PC Max" />
+
+            </FrameLayout>
 
             <TextView
+                android:id="@+id/welcome_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
                 android:text="@string/onboard_welcome_title"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -41,6 +57,7 @@
                 android:gravity="center" />
 
             <TextView
+                android:id="@+id/welcome_subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -142,7 +159,42 @@
 
         </LinearLayout>
 
-        <!-- ═══ صفحه ۳: قدرت سیستم (کامپیوتر) ═══ -->
+        <!-- ═══ صفحه ۳: انتخاب ظاهر (روشن / تیره / خودکار) ═══ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="28dp"
+            android:paddingTop="56dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/onboard_theme_title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="28dp"
+                android:text="@string/onboard_theme_subtitle"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center" />
+
+            <include
+                android:id="@+id/theme_tiles"
+                layout="@layout/view_theme_tiles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- ═══ صفحه ۴: قدرت سیستم (کامپیوتر) ═══ -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -306,6 +358,13 @@
 
         <View
             android:id="@+id/dot_2"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/dot_inactive" />
+
+        <View
+            android:id="@+id/dot_3"
             android:layout_width="8dp"
             android:layout_height="8dp"
             android:layout_marginStart="6dp"

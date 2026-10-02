@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- پالت تیره — تنها تم برنامه -->
-    <color name="background">#0E0E10</color>
-    <color name="surface">#18181B</color>
-    <color name="surface_alt">#212124</color>
-    <color name="border">#2A2A2E</color>
-    <color name="text_primary">#F5F5F7</color>
-    <color name="text_secondary">#9B9BA3</color>
+    <!-- پالت روشن (پیش‌فرض منابع). پالت تیره در values-night/colors.xml است و
+         بر اساس تمِ انتخابیِ کاربر (روشن / تیره / خودکار) خودکار جایگزین می‌شود. -->
+    <color name="background">#F3F3F6</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_alt">#EAEAEF</color>
+    <color name="border">#E0E0E7</color>
+    <color name="text_primary">#15151A</color>
+    <color name="text_secondary">#6B6B76</color>
 
     <!-- Brand -->
-    <color name="accent_red">#FF3B41</color>
-    <color name="accent_red_dark">#E31E24</color>
-    <color name="accent_red_soft">#3A1518</color>
+    <color name="accent_red">#E31E24</color>
+    <color name="accent_red_dark">#B8151A</color>
+    <color name="accent_red_soft">#FDE8E9</color>
 
-    <!-- Green / Yellow optimal-settings tags -->
-    <color name="tag_green">#2ECC71</color>
-    <color name="tag_green_bg">#123321</color>
-    <color name="tag_yellow">#F5C518</color>
-    <color name="tag_yellow_bg">#332B0E</color>
+    <!-- Green / Yellow optimal-settings tags (روی زمینه‌ی روشن کمی تیره‌تر تا خوانا بمانند) -->
+    <color name="tag_green">#0F7A41</color>
+    <color name="tag_green_bg">#DDF4E6</color>
+    <color name="tag_yellow">#946700</color>
+    <color name="tag_yellow_bg">#FBF0CC</color>
+
+    <!-- جلوه‌ها -->
+    <color name="ripple">#1A000000</color>
+    <color name="glow_red">#16E31E24</color>
+    <color name="glow_red_end">#00E31E24</color>
+    <color name="logo_glow">#40E31E24</color>
+    <color name="logo_glow_end">#00E31E24</color>
+    <color name="overlay_button">#80000000</color>
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>

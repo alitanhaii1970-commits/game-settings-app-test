@@ -10,6 +10,8 @@
     android:padding="12dp"
     android:clickable="true"
     android:focusable="true"
+    android:elevation="2dp"
+    android:stateListAnimator="@animator/card_press"
     android:foreground="@drawable/ripple_game_card">
 
     <ImageView

@@ -3,10 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:id="@+id/settings_scroll"
+    android:background="@drawable/bg_screen"
     android:fillViewport="true">
 
     <LinearLayout
+        android:id="@+id/settings_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -42,6 +44,24 @@
                 android:textColor="@color/text_primary" />
 
         </LinearLayout>
+
+        <!-- بخش ظاهر برنامه (روشن / تیره / خودکار) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/settings_theme"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary" />
+
+        <include
+            android:id="@+id/theme_tiles"
+            layout="@layout/view_theme_tiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp" />
 
         <!-- بخش زبان -->
         <TextView

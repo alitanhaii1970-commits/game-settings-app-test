@@ -6,9 +6,8 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
 
 /**
- * ذخیره و بازیابی تنظیمات کاربر: زبان برنامه، فونت و قدرت سیستم.
+ * ذخیره و بازیابی تنظیمات کاربر: ظاهر (تم)، زبان برنامه، فونت و قدرت سیستم.
  * از SharedPreferences استفاده می‌کند تا انتخاب کاربر بین بازکردن‌های مختلف اپ باقی بماند.
- * (تم برنامه همیشه تیره است — تم روشن به‌طور کامل حذف شده.)
  */
 object AppPreferences {
 
@@ -18,9 +17,14 @@ object AppPreferences {
     private const val KEY_FONT = "app_font"
     private const val KEY_SYSTEM_TIER = "system_tier"
     private const val KEY_HAS_LOADED_GAMES = "has_loaded_games"
+    private const val KEY_THEME = "app_theme"
 
     const val LANG_FA = "fa"
     const val LANG_EN = "en"
+
+    const val THEME_LIGHT = "light"
+    const val THEME_DARK = "dark"
+    const val THEME_SYSTEM = "system"
 
     const val TIER_WEAK = "weak"
     const val TIER_MEDIUM = "medium"
@@ -28,6 +32,14 @@ object AppPreferences {
 
     private fun prefs(context: Context): SharedPreferences =
         context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+
+    /** ظاهر برنامه: روشن / تیره / خودکار (هماهنگ با گوشی). پیش‌فرض: تیره. */
+    fun getTheme(context: Context): String =
+        prefs(context).getString(KEY_THEME, THEME_DARK) ?: THEME_DARK
+
+    fun setTheme(context: Context, theme: String) {
+        prefs(context).edit().putString(KEY_THEME, theme).apply()
+    }
 
     fun getLanguage(context: Context): String =
         prefs(context).getString(KEY_LANGUAGE, LANG_FA) ?: LANG_FA
@@ -42,7 +54,7 @@ object AppPreferences {
         AppCompatDelegate.setApplicationLocales(locales)
     }
 
-    /** آیا کاربر مراحل ورود اولیه (زبان → قدرت سیستم) را قبلاً طی کرده؟ */
+    /** آیا کاربر مراحل ورود اولیه (زبان → ظاهر → قدرت سیستم) را قبلاً طی کرده؟ */
     fun isOnboardingDone(context: Context): Boolean =
         prefs(context).getBoolean(KEY_ONBOARDING_DONE, false)
 

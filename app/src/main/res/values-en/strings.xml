@@ -39,4 +39,13 @@
     <string name="system_tier_strong">Strong</string>
     <string name="onboard_tier_title">How powerful is your system (PC)?</string>
     <string name="onboard_tier_subtitle">We\'ll use this to show which settings fit your PC best, for each game</string>
+
+    <!-- Theme -->
+    <string name="settings_theme">Appearance</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">Auto</string>
+    <string name="onboard_theme_title">Choose your look</string>
+    <string name="onboard_theme_subtitle">Light, dark, or match your phone — you can change it later in Settings</string>
+    <string name="recommended_for_you">Recommended for your PC</string>
 </resources>
