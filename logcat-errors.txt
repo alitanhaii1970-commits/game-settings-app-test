@@ -1,0 +1,23 @@
+10-03 10:06:07.825  1755  2497 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-03 10:06:07.825  1755  2497 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-03 10:06:08.510   521  1930 V SplashScreenExceptionList: SplashScreen checking exception for package com.gamesettings.app.test (target sdk:34) -> false
+10-03 10:06:12.705  2621  2835 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(wmsSync-VRI[OnboardingActivity]#0) as ready
+10-03 10:06:12.706  2621  2835 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(VRI[OnboardingActivity]#1) as ready
+10-03 10:06:31.688   521   550 E ActivityManager: Timeout waiting for provider com.google.android.gms/10130 for provider com.google.android.gms.fonts caller=ProcessRecord{b0e0788 2621:com.gamesettings.app.test/u0a192}
+10-03 10:06:31.701  2621  2907 E ActivityThread: Failed to find provider info for com.google.android.gms.fonts
+10-03 10:06:43.443   521  3686 E ActivityManager: ANR in com.google.android.gms.persistent
+10-03 10:06:43.443   521  3686 E ActivityManager:   22% 2621/com.gamesettings.app.test: 2.3% user + 19% kernel / faults: 782 minor 3 major
+10-03 10:07:00.641  4031  4129 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-03 10:07:00.641  4031  4129 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-03 10:07:00.641  4031  4129 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-03 10:07:00.641  4031  4129 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-03 10:07:00.641  4031  4129 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-03 10:07:00.641  4031  4129 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-03 10:07:12.367  2621  5142 W ProviderInstaller: Failed to report request stats: java.lang.NoSuchMethodException: com.google.android.gms.common.security.ProviderInstallerImpl.reportRequestStats2 [class android.content.Context, long, long]
+10-03 10:08:58.315  2621  2621 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::0@0@com.gamesettings.app.test>
+10-03 10:09:01.449  2621  2621 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::1@0@com.gamesettings.app.test>
+10-03 10:09:13.711  2621  2621 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::0@0@com.gamesettings.app.test>
+10-03 10:09:30.247  2621  5141 W Firestore: (26.1.2) [WatchStream]: (4534026) Stream closed with status: Status{code=UNAVAILABLE, description=End of stream or IOException, cause=null}.
+10-03 10:09:38.026   521   622 I WindowManager: ANR in Window{a0ac757 u0 NotificationShade}. Reason:Input dispatching timed out (a0ac757 NotificationShade (server) is not responding. Waited 5000ms for KeyEvent(deviceId=-1, eventTime=250022000000, source=KEYBOARD, displayId=-1, action=UP, flags=0x00000008, keyCode=TV_INPUT_VGA_1(251), scanCode=0, metaState=0x00000000, repeatCount=0), policyFlags=0x6b000000)
+10-03 10:09:39.308   521   622 I WindowManager: ANR in input window owned by pid=840. Reason: Input dispatching timed out ([Gesture Monitor] edge-swipe (server) is not responding. Waited 5013ms for MotionEvent(deviceId=-1, eventTime=251373000000, source=TOUCHSCREEN, displayId=0, action=DOWN, actionButton=0x00000000, flags=0x00000000, metaState=0x00000000, buttonState=0x00000000, classification=NONE, edgeFlags=0x00000000, xPrecision=1.0, yPrecision=1.0, xCursorPosition=nan, yCursorPosition=nan, pointers=[0: (612.0, 222.0)]), policyFlags=0x6b000000)
+10-03 10:09:39.310   521   622 I WindowManager: ANR in Window{5dbac78 u0 NavigationBar0}. Reason:Input dispatching timed out (5dbac78 NavigationBar0 (server) is not responding. Waited 5018ms for MotionEvent(deviceId=-1, eventTime=251373000000, source=TOUCHSCREEN, displayId=0, action=DOWN, actionButton=0x00000000, flags=0x00000000, metaState=0x00000000, buttonState=0x00000000, classification=NONE, edgeFlags=0x00000000, xPrecision=1.0, yPrecision=1.0, xCursorPosition=nan, yCursorPosition=nan, pointers=[0: (612.0, 222.0)]), policyFlags=0x6b000000)
