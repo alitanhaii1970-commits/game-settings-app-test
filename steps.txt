@@ -1,0 +1,75 @@
+=== onboarding + theme picker
+SHOT 01-welcome (258 KB)
+TAP onboard_button (540,2187)
+SHOT 02-language (95 KB)
+TAP onboard_button (540,2187)
+SHOT 03-theme (110 KB)
+TAP tile_theme_light (224,732)
+SHOT 04-reveal-mid (103 KB)
+SHOT 05-theme-light-after (99 KB)
+after theme change we are still on the theme page: True
+TAP onboard_button (540,2187)
+SHOT 06-tier (114 KB)
+TAP option_tier_strong (540,1081)
+TAP onboard_button (540,2187)
+=== list and detail (light)
+SHOT 07-list-light (536 KB)
+visible game cards: 8
+SHOT 08-detail-light (944 KB)
+SHOT 09-detail-light-scrolled (232 KB)
+SHOT 10-list-after-back (544 KB)
+=== settings + switch to dark
+TAP settings_button (211,233)
+SHOT 11-settings-light (157 KB)
+SHOT 12-settings-light-scrolled (160 KB)
+TAP tile_theme_dark (540,601)
+SHOT 13-dark-reveal-mid (156 KB)
+SHOT 14-settings-dark (162 KB)
+SHOT 15-list-dark (533 KB)
+visible game cards: 8
+SHOT 16-detail-dark (945 KB)
+=== system theme + english
+TAP settings_button (211,233)
+TAP tile_theme_system (203,601)
+SHOT 17-settings-system-theme (157 KB)
+TAP lang_en (540,302)
+SHOT 18-settings-english (159 KB)
+SHOT 19-list-english (545 KB)
+=== search + refresh
+TAP search_box (540,386)
+SHOT 20-search-a (412 KB)
+TAP refresh_button (1001,233)
+SHOT 21-refresh-spinning (572 KB)
+SHOT 22-after-refresh (571 KB)
+=== update flow (stay vs leave settings)
+TAP settings_button (869,233)
+WARN not found: check_update_button
+SHOT 30-update-clicked (159 KB)
+SHOT 31-update-A-stay (159 KB)
+UPDATE A (stayed in settings) top activity: ResumedActivity=ActivityRecord{3e4efc u0 com.gamesettings.app.test/com.gamesettings.app.SettingsActivity t8}
+TAP settings_button (869,233)
+WARN not found: check_update_button
+SHOT 32-update-B-left-settings (544 KB)
+UPDATE B (left settings during download) top activity: ResumedActivity=ActivityRecord{3f25b6a u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity t8}
+=== offline first run
+WARN not found: onboard_button
+WARN not found: onboard_button
+WARN not found: onboard_button
+WARN not found: onboard_button
+SHOT 40-offline-first-run (259 KB)
+SHOT 41-network-back-list (285 KB)
+=== don't keep activities
+visible game cards: 0
+SHOT 50-dk-detail (253 KB)
+SHOT 51-dk-returned (261 KB)
+DK top activity after return: ResumedActivity=ActivityRecord{2be73f7 u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity t10}
+=== monkey
+monkey crashed: False
+SHOT 23-after-monkey (119 KB)
+=== logs
+logcat: 2307 app lines, 22 error-ish lines
+COUNT FATAL EXCEPTION: 0
+COUNT IntentReceiverLeaked: 2
+COUNT Leaked: 0
+COUNT StrictMode: 0
+DONE

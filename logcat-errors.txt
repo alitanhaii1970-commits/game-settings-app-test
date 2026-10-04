@@ -1,0 +1,22 @@
+10-04 14:27:50.593  1704  2418 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-04 14:27:50.593  1704  2418 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-04 14:27:57.086   521  2524 V SplashScreenExceptionList: SplashScreen checking exception for package com.gamesettings.app.test (target sdk:34) -> false
+10-04 14:28:06.090  1729  2056 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-04 14:28:06.090  1729  2056 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-04 14:28:06.090  1729  2056 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-04 14:28:06.090  1729  2056 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-04 14:28:06.090  1729  2056 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-04 14:28:06.090  1729  2056 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-04 14:28:30.323  4163  4326 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-04 14:28:30.323  4163  4326 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-04 14:28:30.324  4163  4326 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-04 14:28:30.324  4163  4326 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-04 14:28:30.324  4163  4326 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-04 14:28:30.324  4163  4326 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-04 14:30:30.512  3200  3200 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::0@0@com.gamesettings.app.test>
+10-04 14:30:32.554  3200  3200 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::1@0@com.gamesettings.app.test>
+10-04 14:32:18.860   521  2350 V SplashScreenExceptionList: SplashScreen checking exception for package com.gamesettings.app.test (target sdk:34) -> false
+10-04 14:32:20.195   521   949 W WindowManager: Exception thrown during dispatchAppVisibility Window{3526273 u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity EXITING}
+10-04 14:35:09.278   521  1205 W WindowManager: Exception thrown during dispatchAppVisibility Window{69d5b8d u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity EXITING}
+10-04 14:35:09.653   521  2177 V SplashScreenExceptionList: SplashScreen checking exception for package com.gamesettings.app.test (target sdk:34) -> false
+10-04 14:38:21.172   521  2350 E ActivityTaskManager: setVisibility=true while transition is not collecting or finishing ActivityRecord{2be73f7 u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity t10} caller=com.android.server.wm.ActivityRecord.setVisibility:5287 com.android.server.wm.TaskFragment.resumeTopActivity:1393 com.android.server.wm.Task.resumeTopActivityInnerLocked:5044 com.android.server.wm.Task.resumeTopActivityUncheckedLocked:4974 com.android.server.wm.Task.resumeTopActivityUncheckedLocked:5025 com.android.server.wm.RootWindowContainer.lambda$applySleepTokens$20:2428 com.android.server.wm.RootWindowContainer.$r8$lambda$9xL80GDJRExKql35hTmQVg_ieD8:0 com.android.server.wm.RootWindowContainer$$ExternalSyntheticLambda10.accept:0 
