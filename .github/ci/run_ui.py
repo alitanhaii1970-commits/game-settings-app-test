@@ -207,11 +207,24 @@ def launch_like_launcher():
     time.sleep(2.5)
 
 
+def tap_next(after=1.3):
+    ns = wait_nodes('onboard_button', 5)
+    x, y = center(ns[0]) if ns else (W // 2, int(H * 0.915))
+    tap_xy(x, y)
+    time.sleep(after)
+    log(f'TAP next ({x},{y}) found_node={bool(ns)}')
+
+
+def open_settings_and_press_check():
+    tap_id('settings_button')
+    swipe_up()
+    return tap_id('check_update_button', after=1.0)
+
+
 def update_flow():
     # A) در همان صفحه‌ی تنظیمات می‌مانیم تا دانلود تمام شود
     launch_like_launcher()
-    tap_id('settings_button')
-    tap_id('check_update_button', after=1.0)
+    open_settings_and_press_check()
     shot('30-update-clicked', 1.0)
     time.sleep(25)
     shot('31-update-A-stay', 0.5)
@@ -224,8 +237,7 @@ def update_flow():
         if nodes(dump(), 'settings_button'):
             break
         back()
-    tap_id('settings_button')
-    tap_id('check_update_button', after=1.0)
+    open_settings_and_press_check()
     back()
     time.sleep(25)
     shot('32-update-B-left-settings', 0.5)
@@ -241,7 +253,7 @@ def offline_first_run():
     adb('shell', 'am', 'start', '-n', f'{PKG}/com.gamesettings.app.MainActivity')
     wait_nodes('onboard_button', 40)
     for _ in range(4):
-        tap_id('onboard_button', after=1.3)
+        tap_next(1.4)
     time.sleep(6)
     shot('40-offline-first-run', 0.5)
     adb('shell', 'svc', 'wifi', 'enable')
@@ -286,6 +298,8 @@ def collect_logs():
     open(f'{OUT}/logcat-app.txt', 'w', encoding='utf-8').write('\n'.join(keep[-900:]))
     errs = [l for l in keep if re.search(r' [EF] |FATAL|Exception|ANR', l)]
     open(f'{OUT}/logcat-errors.txt', 'w', encoding='utf-8').write('\n'.join(errs[-300:]))
+    leaks = [l for l in full.splitlines() if 'IntentReceiverLeaked' in l or ('leaked' in l.lower() and 'gamesettings' in l)]
+    open(f'{OUT}/logcat-leaks.txt', 'w', encoding='utf-8').write('\n'.join(leaks[-60:]))
     log(f'logcat: {len(keep)} app lines, {len(errs)} error-ish lines')
     for pat in ('FATAL EXCEPTION', 'IntentReceiverLeaked', 'Leaked', 'StrictMode'):
         log(f'COUNT {pat}: ' + str(sum(1 for l in full.splitlines() if pat in l and (PKG in l or pat in ('FATAL EXCEPTION', 'IntentReceiverLeaked')))))
