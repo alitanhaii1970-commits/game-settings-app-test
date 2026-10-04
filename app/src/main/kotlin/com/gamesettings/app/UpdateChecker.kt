@@ -54,7 +54,7 @@ object UpdateChecker {
                 connection.readTimeout = 10000
 
                 if (connection.responseCode != 200) {
-                    mainHandler.post { onError("سرور گیت‌هاب جواب نداد (کد ${connection.responseCode})") }
+                    mainHandler.post { onError("HTTP ${connection.responseCode}") }
                     return@Thread
                 }
 
@@ -86,20 +86,24 @@ object UpdateChecker {
                     }
                 }
             } catch (e: Exception) {
-                mainHandler.post { onError(e.message ?: "خطای نامشخص") }
+                mainHandler.post { onError(e.message ?: e.javaClass.simpleName) }
             }
         }.start()
     }
 
     /** دانلود APK در پس‌زمینه با DownloadManager، و باز کردن خودکار صفحه‌ی نصب پس از پایان. */
-    fun downloadAndPromptInstall(context: Context, downloadUrl: String) {
-        val downloadsDir = context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS)
+    fun downloadAndPromptInstall(activityContext: Context, downloadUrl: String) {
+        // ⚠️ باگ قبلی: گیرنده‌ی «پایان دانلود» روی خودِ صفحه‌ی تنظیمات ثبت می‌شد. اگه کاربر حین دانلود
+        // (که روی اینترنت کند چند دقیقه طول می‌کشه) از تنظیمات بیرون می‌رفت، گیرنده با بسته‌شدن صفحه
+        // حذف می‌شد و صفحه‌ی نصب هیچ‌وقت باز نمی‌شد. حالا روی Context کل برنامه ثبت می‌شه.
+        val context = activityContext.applicationContext
+        val downloadsDir = context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS) ?: return
         val destinationFile = File(downloadsDir, APK_FILENAME)
         if (destinationFile.exists()) destinationFile.delete()
 
         val request = DownloadManager.Request(Uri.parse(downloadUrl))
-            .setTitle("به‌روزرسانی PC Max")
-            .setDescription("در حال دانلود نسخه‌ی جدید…")
+            .setTitle(context.getString(R.string.update_download_title))
+            .setDescription(context.getString(R.string.update_download_desc))
             .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
             .setDestinationUri(Uri.fromFile(destinationFile))
             .setAllowedOverMetered(true)

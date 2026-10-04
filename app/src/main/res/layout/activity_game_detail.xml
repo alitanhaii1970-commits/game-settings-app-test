@@ -38,7 +38,7 @@
                     android:background="@drawable/bg_image_rounded"
                     android:clipToOutline="true"
                     android:scaleType="centerCrop"
-                    android:contentDescription="عکس بازی" />
+                    android:contentDescription="@string/cd_game_image" />
 
                 <ImageView
                     android:layout_width="30dp"
@@ -48,7 +48,7 @@
                     android:padding="6dp"
                     android:background="@drawable/bg_overlay_button"
                     android:src="@drawable/ic_expand"
-                    android:contentDescription="بزرگ‌نمایی عکس"
+                    android:contentDescription="@string/cd_expand_image"
                     app:tint="@color/white" />
 
             </FrameLayout>
@@ -75,6 +75,7 @@
                         android:padding="28dp">
 
                         <ImageView
+            android:importantForAccessibility="no"
                             android:layout_width="52dp"
                             android:layout_height="52dp"
                             android:src="@drawable/ic_youtube"
@@ -96,8 +97,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:minWidth="220dp"
-                            android:paddingHorizontal="24dp"
-                            android:paddingVertical="14dp"
+                            android:paddingStart="24dp"
+                            android:paddingEnd="24dp"
+                            android:paddingTop="14dp"
+                            android:paddingBottom="14dp"
                             android:background="@drawable/bg_button_red"
                             android:text="@string/watch_on_youtube"
                             android:textAllCaps="false"
@@ -142,6 +145,7 @@
                                 android:visibility="gone">
 
                                 <ImageView
+            android:importantForAccessibility="no"
                                     android:layout_width="14dp"
                                     android:layout_height="14dp"
                                     android:src="@drawable/ic_check"
@@ -203,6 +207,7 @@
                                 android:visibility="gone">
 
                                 <ImageView
+            android:importantForAccessibility="no"
                                     android:layout_width="14dp"
                                     android:layout_height="14dp"
                                     android:src="@drawable/ic_check"

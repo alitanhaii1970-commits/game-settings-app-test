@@ -48,4 +48,19 @@
     <string name="onboard_theme_title">ظاهر برنامه رو انتخاب کن</string>
     <string name="onboard_theme_subtitle">روشن، تیره، یا هماهنگ با گوشیت — بعداً هم از تنظیمات عوض می‌شه</string>
     <string name="recommended_for_you">پیشنهادی برای سیستم شما</string>
+
+    <!-- پیام‌ها و توضیح‌های دسترس‌پذیری که قبلاً داخل کد ثابت (فقط فارسی) بودند -->
+    <string name="list_updated">لیست به‌روز شد ✅</string>
+    <string name="offline_empty">اتصال به اینترنت برقرار نیست.\nلیست قبلی موجود نیست.</string>
+    <string name="offline_toast">اتصال برقرار نشد، لیست قبلی نشون داده می‌شه</string>
+    <string name="no_results">بازی‌ای با این اسم پیدا نشد</string>
+    <string name="no_settings_for_game">برای این بازی هنوز تنظیماتی ثبت نشده.</string>
+    <string name="no_browser_found">مرورگر یافت نشد — Chrome/Firefox نصب کنید</string>
+    <string name="update_download_title">به‌روزرسانی PC Max</string>
+    <string name="update_download_desc">در حال دانلود نسخه‌ی جدید…</string>
+    <string name="cd_game_image">عکس بازی</string>
+    <string name="cd_expand_image">بزرگ‌نمایی عکس</string>
+    <string name="cd_close">بستن</string>
+    <string name="cd_back">بازگشت</string>
+    <string name="cd_refresh">به‌روزرسانی لیست</string>
 </resources>

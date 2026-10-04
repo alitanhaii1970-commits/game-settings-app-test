@@ -42,7 +42,7 @@
                     android:background="@drawable/bg_image_rounded"
                     android:clipToOutline="true"
                     android:elevation="6dp"
-                    android:contentDescription="PC Max" />
+                    android:contentDescription="@string/app_name" />
 
             </FrameLayout>
 
@@ -73,7 +73,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingHorizontal="28dp"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
             android:paddingTop="56dp">
 
             <TextView
@@ -102,8 +103,10 @@
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
                 android:background="@drawable/bg_selectable_card_selected"
-                android:paddingHorizontal="18dp"
-                android:paddingVertical="18dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
                 android:layout_marginBottom="14dp"
                 android:clickable="true"
                 android:focusable="true">
@@ -118,6 +121,7 @@
                     android:textColor="@color/text_primary" />
 
                 <ImageView
+            android:importantForAccessibility="no"
                     android:id="@+id/check_lang_fa"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
@@ -133,8 +137,10 @@
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
                 android:background="@drawable/bg_selectable_card"
-                android:paddingHorizontal="18dp"
-                android:paddingVertical="18dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
                 android:clickable="true"
                 android:focusable="true">
 
@@ -148,6 +154,7 @@
                     android:textColor="@color/text_primary" />
 
                 <ImageView
+            android:importantForAccessibility="no"
                     android:id="@+id/check_lang_en"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
@@ -164,7 +171,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingHorizontal="28dp"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
             android:paddingTop="56dp">
 
             <TextView
@@ -199,7 +207,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingHorizontal="28dp"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
             android:paddingTop="56dp">
 
             <TextView
@@ -249,6 +258,7 @@
                     android:textColor="@color/text_primary" />
 
                 <ImageView
+            android:importantForAccessibility="no"
                     android:id="@+id/check_tier_weak"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
@@ -286,6 +296,7 @@
                     android:textColor="@color/text_primary" />
 
                 <ImageView
+            android:importantForAccessibility="no"
                     android:id="@+id/check_tier_medium"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
@@ -322,6 +333,7 @@
                     android:textColor="@color/text_primary" />
 
                 <ImageView
+            android:importantForAccessibility="no"
                     android:id="@+id/check_tier_strong"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
@@ -377,9 +389,11 @@
         android:id="@+id/onboard_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
         android:layout_marginBottom="32dp"
-        android:paddingVertical="14dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
         android:background="@drawable/bg_button_red"
         android:backgroundTint="@null"
         android:text="@string/onboard_start"

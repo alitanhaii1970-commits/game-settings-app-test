@@ -21,7 +21,7 @@
         android:background="@drawable/bg_image_rounded"
         android:clipToOutline="true"
         android:scaleType="centerCrop"
-        android:contentDescription="عکس بازی" />
+        android:contentDescription="@string/cd_game_image" />
 
     <TextView
         android:id="@+id/game_name"
@@ -34,6 +34,7 @@
         android:textColor="@color/text_primary" />
 
     <ImageView
+            android:importantForAccessibility="no"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:src="@drawable/ic_chevron"

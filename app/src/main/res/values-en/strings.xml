@@ -48,4 +48,19 @@
     <string name="onboard_theme_title">Choose your look</string>
     <string name="onboard_theme_subtitle">Light, dark, or match your phone — you can change it later in Settings</string>
     <string name="recommended_for_you">Recommended for your PC</string>
+
+    <!-- Messages and accessibility labels that used to be hard-coded (Persian only) -->
+    <string name="list_updated">List updated ✅</string>
+    <string name="offline_empty">No internet connection.\nNo previous list available.</string>
+    <string name="offline_toast">Couldn\'t connect, showing the previous list</string>
+    <string name="no_results">No game found with that name</string>
+    <string name="no_settings_for_game">No settings have been added for this game yet.</string>
+    <string name="no_browser_found">No browser found — please install Chrome or Firefox</string>
+    <string name="update_download_title">PC Max update</string>
+    <string name="update_download_desc">Downloading the new version…</string>
+    <string name="cd_game_image">Game image</string>
+    <string name="cd_expand_image">Enlarge image</string>
+    <string name="cd_close">Close</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_refresh">Refresh list</string>
 </resources>

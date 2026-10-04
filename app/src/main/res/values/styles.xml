@@ -14,8 +14,10 @@
     <style name="SettingsRadio" parent="Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingVertical">14dp</item>
-        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:buttonTint">@color/accent_red</item>
@@ -24,8 +26,10 @@
     <style name="SettingsRadioYellow" parent="Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingVertical">14dp</item>
-        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:buttonTint">@color/tag_yellow</item>
@@ -41,8 +45,10 @@
     <style name="TagChip">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingHorizontal">12dp</item>
-        <item name="android:paddingVertical">6dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
         <item name="android:textSize">13sp</item>
         <item name="android:textStyle">bold</item>
     </style>

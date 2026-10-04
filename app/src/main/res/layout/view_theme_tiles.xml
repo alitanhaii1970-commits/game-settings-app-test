@@ -43,6 +43,7 @@
                 android:textColor="@color/text_primary" />
 
             <ImageView
+            android:importantForAccessibility="no"
                 android:id="@+id/check_theme_light"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
@@ -91,6 +92,7 @@
                 android:textColor="@color/text_primary" />
 
             <ImageView
+            android:importantForAccessibility="no"
                 android:id="@+id/check_theme_dark"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
@@ -138,6 +140,7 @@
                 android:textColor="@color/text_primary" />
 
             <ImageView
+            android:importantForAccessibility="no"
                 android:id="@+id/check_theme_system"
                 android:layout_width="16dp"
                 android:layout_height="16dp"

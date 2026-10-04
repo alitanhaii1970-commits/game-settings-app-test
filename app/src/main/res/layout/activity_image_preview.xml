@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:scaleType="fitCenter"
-        android:contentDescription="عکس بازی" />
+        android:contentDescription="@string/cd_game_image" />
 
     <ImageButton
         android:id="@+id/preview_close"
@@ -23,7 +23,7 @@
         android:background="@drawable/bg_overlay_button"
         android:src="@drawable/ic_close"
         android:padding="12dp"
-        android:contentDescription="بستن"
+        android:contentDescription="@string/cd_close"
         app:tint="@color/white" />
 
 </FrameLayout>

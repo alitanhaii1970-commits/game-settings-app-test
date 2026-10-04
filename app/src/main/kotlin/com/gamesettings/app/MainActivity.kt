@@ -136,6 +136,13 @@ class MainActivity : BaseActivity() {
             forceServer = forceServer,
             cacheOnly = cacheOnly,
             onSuccess = { games ->
+                if (cacheOnly && games.isEmpty()) {
+                    // حافظه‌ی محلی «خالی» بود (نه خطا) — از سرور بگیر تا کاربر صفحه‌ی خالیِ بی‌پیام نبینه
+                    isLoading = false
+                    stopSpin()
+                    loadGames(forceServer = true)
+                    return@fetchGames
+                }
                 isLoading = false
                 stopSpin()
                 showSkeleton(false)
@@ -143,7 +150,7 @@ class MainActivity : BaseActivity() {
                 applyFilter(searchBox.text?.toString().orEmpty(), animate = playEntrance || forceServer)
                 if (forceServer) {
                     AppPreferences.markGamesLoaded(this)
-                    Toast.makeText(this, "لیست به‌روز شد ✅", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.list_updated), Toast.LENGTH_SHORT).show()
                 }
             },
             onError = { e ->
@@ -157,9 +164,9 @@ class MainActivity : BaseActivity() {
                 }
                 if (allGames.isEmpty()) {
                     emptyText.visibility = View.VISIBLE
-                    emptyText.text = "اتصال به اینترنت برقرار نیست.\nلیست قبلی موجود نیست."
+                    emptyText.text = getString(R.string.offline_empty)
                 } else {
-                    Toast.makeText(this, "اتصال برقرار نشد، لیست قبلی نشون داده می‌شه", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.offline_toast), Toast.LENGTH_SHORT).show()
                 }
             }
         )
@@ -177,9 +184,11 @@ class MainActivity : BaseActivity() {
         }
         adapter.submitList(filtered, animateEntrance = animate && query.isBlank())
 
-        emptyText.visibility = if (filtered.isEmpty() && allGames.isNotEmpty()) View.VISIBLE else View.GONE
-        if (filtered.isEmpty() && allGames.isNotEmpty()) {
-            emptyText.text = "بازی‌ای با این اسم پیدا نشد"
+        // لیست خالی همیشه یک پیام داره: «هنوز بازی‌ای اضافه نشده» یا «با این اسم پیدا نشد»
+        val showEmpty = filtered.isEmpty() && !isLoading
+        emptyText.visibility = if (showEmpty) View.VISIBLE else View.GONE
+        if (showEmpty) {
+            emptyText.text = getString(if (allGames.isEmpty()) R.string.empty_games else R.string.no_results)
         }
     }
 

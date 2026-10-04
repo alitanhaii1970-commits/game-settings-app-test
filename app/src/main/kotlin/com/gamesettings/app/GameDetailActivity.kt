@@ -113,7 +113,7 @@ class GameDetailActivity : BaseActivity() {
                 } catch (e: Exception) {
                     Toast.makeText(
                         this,
-                        "مرورگر یافت نشد — Chrome/Firefox نصب کنید",
+                        getString(R.string.no_browser_found),
                         Toast.LENGTH_SHORT
                     ).show()
                     android.util.Log.e("GameDetail", "YouTube Error: ${e.message}")
@@ -139,7 +139,7 @@ class GameDetailActivity : BaseActivity() {
 
             if (settingsGreen.isBlank() && settingsYellow.isBlank()) {
                 greenSection.visibility = View.VISIBLE
-                greenText.text = "برای این بازی هنوز تنظیماتی ثبت نشده."
+                greenText.text = getString(R.string.no_settings_for_game)
             }
 
             // ورود پلکانی بخش‌ها (بعد از عکس)

@@ -182,7 +182,12 @@ object ThemeManager {
         }
 
         // تا پایان انیمیشن لمس‌ها را نگیر که کاربر روی صفحه‌ی نیمه‌کاره چیزی را نزند
-        override fun onTouchEvent(event: MotionEvent): Boolean = true
+        override fun onTouchEvent(event: MotionEvent): Boolean {
+            if (event.action == MotionEvent.ACTION_UP) performClick()
+            return true
+        }
+
+        override fun performClick(): Boolean = super.performClick()
     }
 
     // ───────────────────────── کارت‌های انتخاب تم (ورود اولیه و تنظیمات) ─────────────────────────
