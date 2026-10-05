@@ -221,27 +221,39 @@ def open_settings_and_press_check():
     return tap_id('check_update_button', after=1.0)
 
 
+def wait_installer(label, timeout=170):
+    """منتظر می‌مانیم تا پس از پایان دانلود، صفحه‌ی نصب (یا تنظیمات «نصب از منبع ناشناس») جلوی برنامه بیاید."""
+    t0 = time.time()
+    while time.time() - t0 < timeout:
+        top = current_top()
+        if PKG not in top:
+            log(f'{label}: PROMPT APPEARED after {int(time.time() - t0)}s -> {top}')
+            return True
+        time.sleep(5)
+    status = adb('shell', 'dumpsys', 'downloads')
+    st = re.findall(r'Status:\s*\d+|status=\d+', status)[:3]
+    log(f'{label}: NO PROMPT after {timeout}s; top={current_top()}; downloads={st}')
+    return False
+
+
 def update_flow():
     # A) در همان صفحه‌ی تنظیمات می‌مانیم تا دانلود تمام شود
     launch_like_launcher()
     open_settings_and_press_check()
     shot('30-update-clicked', 1.0)
-    time.sleep(25)
+    ok_a = wait_installer('UPDATE A (stayed in settings)')
     shot('31-update-A-stay', 0.5)
-    log('UPDATE A (stayed in settings) top activity: ' + current_top())
     launch_like_launcher()
     # B) حین دانلود از تنظیمات بیرون می‌رویم (کاربر واقعی همین کار را می‌کند)
-    adb('shell', 'am', 'force-stop', 'com.android.settings')
-    launch_like_launcher()
-    for _ in range(2):
+    for _ in range(3):
         if nodes(dump(), 'settings_button'):
             break
         back()
     open_settings_and_press_check()
     back()
-    time.sleep(25)
+    ok_b = wait_installer('UPDATE B (left settings during download)')
     shot('32-update-B-left-settings', 0.5)
-    log('UPDATE B (left settings during download) top activity: ' + current_top())
+    log(f'UPDATE RESULT: stay={ok_a} leave={ok_b}')
     launch_like_launcher()
 
 

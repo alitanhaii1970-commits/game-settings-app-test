@@ -95,7 +95,7 @@ class GameDetailActivity : BaseActivity() {
         val hasValidYoutubeLink = showYoutubeButton &&
             youtubeUrl.isNotBlank() &&
             youtubeUrl.trim().isNotEmpty() &&
-            (youtubeUrl.contains("youtube") || youtubeUrl.startsWith("http"))
+            (youtubeUrl.contains("youtube") || youtubeUrl.contains("youtu.be") || youtubeUrl.startsWith("http"))
 
         if (hasValidYoutubeLink) {
             // حالت یوتیوب انحصاری
@@ -107,7 +107,10 @@ class GameDetailActivity : BaseActivity() {
             // ✅ اصلاح: دکمه کار کنه درست
             watchButton.setOnClickListener {
                 try {
-                    val cleanUrl = youtubeUrl.trim()
+                    // لینک بدون http(s):// (مثل youtu.be/xyz یا youtube.com/...) باعث «مرورگر پیدا نشد» می‌شد
+                    val cleanUrl = youtubeUrl.trim().let {
+                        if (it.startsWith("http://") || it.startsWith("https://")) it else "https://$it"
+                    }
                     val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(cleanUrl))
                     startActivity(browserIntent)
                 } catch (e: Exception) {
