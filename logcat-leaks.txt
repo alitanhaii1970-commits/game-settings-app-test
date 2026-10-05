@@ -1,0 +1,2 @@
+10-05 03:59:29.843  5119  5119 E ActivityThread: android.app.IntentReceiverLeaked: Service com.google.android.ims.service.JibeService has leaked IntentReceiver com.google.android.ims.receiver.sip.DebugOptionsReceiver@b3c0f90 that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-05 03:59:29.859  5119  5119 E ActivityThread: android.app.IntentReceiverLeaked: Service com.google.android.ims.service.JibeService has leaked IntentReceiver bsch@eb0b089 that was originally registered here. Are you missing a call to unregisterReceiver()?

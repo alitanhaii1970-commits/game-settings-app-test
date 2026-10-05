@@ -1,0 +1,17 @@
+10-05 03:58:38.262  1711  2516 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-05 03:58:38.262  1711  2516 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-05 03:58:43.224   525   910 V SplashScreenExceptionList: SplashScreen checking exception for package com.gamesettings.app.test (target sdk:34) -> false
+10-05 03:59:05.172  4002  4110 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-05 03:59:05.172  4002  4110 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-05 03:59:05.172  4002  4110 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-05 03:59:05.172  4002  4110 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-05 03:59:05.172  4002  4110 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-05 03:59:05.172  4002  4110 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-05 04:01:09.061  3399  3399 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::1@0@com.gamesettings.app.test>
+10-05 04:07:20.078   525  1088 V SplashScreenExceptionList: SplashScreen checking exception for package com.gamesettings.app.test (target sdk:34) -> false
+10-05 04:07:21.343   525  1088 W WindowManager: Exception thrown during dispatchAppVisibility Window{3010c74 u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity EXITING}
+10-05 04:08:39.446   525  2699 W WindowManager: Exception thrown during dispatchAppVisibility Window{7ec01ab u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity EXITING}
+10-05 04:08:39.533   525   810 V SplashScreenExceptionList: SplashScreen checking exception for package com.gamesettings.app.test (target sdk:34) -> false
+10-05 04:08:41.147  8074  8097 W ProviderInstaller: Failed to report request stats: java.lang.NoSuchMethodException: com.google.android.gms.common.security.ProviderInstallerImpl.reportRequestStats2 [class android.content.Context, long, long]
+10-05 04:08:48.549  7967  8001 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-05 04:08:48.549  7967  8001 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)

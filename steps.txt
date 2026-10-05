@@ -1,0 +1,76 @@
+=== onboarding + theme picker
+SHOT 01-welcome (273 KB)
+TAP onboard_button (540,2187)
+SHOT 02-language (96 KB)
+TAP onboard_button (540,2187)
+SHOT 03-theme (111 KB)
+TAP tile_theme_light (224,732)
+SHOT 04-reveal-mid (99 KB)
+SHOT 05-theme-light-after (100 KB)
+after theme change we are still on the theme page: True
+TAP onboard_button (540,2187)
+SHOT 06-tier (115 KB)
+TAP option_tier_strong (540,1081)
+TAP onboard_button (540,2187)
+=== list and detail (light)
+SHOT 07-list-light (537 KB)
+visible game cards: 8
+SHOT 08-detail-light (945 KB)
+SHOT 09-detail-light-scrolled (233 KB)
+SHOT 10-list-after-back (544 KB)
+=== settings + switch to dark
+TAP settings_button (211,233)
+SHOT 11-settings-light (156 KB)
+SHOT 12-settings-light-scrolled (159 KB)
+TAP tile_theme_dark (540,601)
+SHOT 13-dark-reveal-mid (156 KB)
+SHOT 14-settings-dark (162 KB)
+SHOT 15-list-dark (533 KB)
+visible game cards: 8
+SHOT 16-detail-dark (944 KB)
+=== system theme + english
+TAP settings_button (211,233)
+TAP tile_theme_system (203,601)
+SHOT 17-settings-system-theme (157 KB)
+TAP lang_en (540,302)
+SHOT 18-settings-english (160 KB)
+SHOT 19-list-english (544 KB)
+=== search + refresh
+TAP search_box (540,386)
+SHOT 20-search-a (414 KB)
+TAP refresh_button (1001,233)
+SHOT 21-refresh-spinning (573 KB)
+SHOT 22-after-refresh (579 KB)
+=== update flow (stay vs leave settings)
+TAP settings_button (869,233)
+TAP check_update_button (539,2190)
+SHOT 30-update-clicked (165 KB)
+UPDATE A (stayed in settings): NO PROMPT after 170s; top=ResumedActivity=ActivityRecord{eb58e71 u0 com.gamesettings.app.test/com.gamesettings.app.SettingsActivity t8}; downloads=[]
+SHOT 31-update-A-stay (165 KB)
+TAP settings_button (869,233)
+TAP check_update_button (539,2190)
+UPDATE B (left settings during download): NO PROMPT after 170s; top=ResumedActivity=ActivityRecord{b8f214e u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity t8}; downloads=[]
+SHOT 32-update-B-left-settings (545 KB)
+UPDATE RESULT: stay=False leave=False
+=== offline first run
+TAP next (540,2196) found_node=False
+TAP next (540,2187) found_node=True
+TAP next (540,2187) found_node=True
+TAP next (540,2187) found_node=True
+SHOT 40-offline-first-run (118 KB)
+SHOT 41-network-back-list (527 KB)
+=== don't keep activities
+visible game cards: 8
+SHOT 50-dk-detail (920 KB)
+SHOT 51-dk-returned (924 KB)
+DK top activity after return: ResumedActivity=ActivityRecord{6e1ffe7 u0 com.gamesettings.app.test/com.gamesettings.app.GameDetailActivity t10}
+=== monkey
+monkey crashed: False
+SHOT 23-after-monkey (920 KB)
+=== logs
+logcat: 7867 app lines, 17 error-ish lines
+COUNT FATAL EXCEPTION: 0
+COUNT IntentReceiverLeaked: 2
+COUNT Leaked: 0
+COUNT StrictMode: 0
+DONE

@@ -1,0 +1,3 @@
+w: file:///home/runner/work/game-settings-app-test/game-settings-app-test/app/src/main/kotlin/com/gamesettings/app/ImagePreviewActivity.kt:19:9 'overridePendingTransition(Int, Int): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/game-settings-app-test/game-settings-app-test/app/src/main/kotlin/com/gamesettings/app/ImagePreviewActivity.kt:46:9 'overridePendingTransition(Int, Int): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/game-settings-app-test/game-settings-app-test/app/src/main/kotlin/com/gamesettings/app/MainActivity.kt:149:25 Parameter 'e' is never used, could be renamed to _
