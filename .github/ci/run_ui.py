@@ -196,6 +196,103 @@ def search_and_refresh():
     shot('22-after-refresh', 3.0)
 
 
+def current_top():
+    out = adb('shell', 'dumpsys', 'activity', 'activities')
+    m = re.findall(r'(?:mResumedActivity|ResumedActivity)[^\n]*', out)
+    return m[0].strip() if m else '?'
+
+
+def launch_like_launcher():
+    adb('shell', 'monkey', '-p', PKG, '-c', 'android.intent.category.LAUNCHER', '1')
+    time.sleep(2.5)
+
+
+def tap_next(after=1.3):
+    ns = wait_nodes('onboard_button', 5)
+    x, y = center(ns[0]) if ns else (W // 2, int(H * 0.915))
+    tap_xy(x, y)
+    time.sleep(after)
+    log(f'TAP next ({x},{y}) found_node={bool(ns)}')
+
+
+def open_settings_and_press_check():
+    tap_id('settings_button')
+    swipe_up()
+    return tap_id('check_update_button', after=1.0)
+
+
+def wait_installer(label, timeout=170):
+    """منتظر می‌مانیم تا پس از پایان دانلود، صفحه‌ی نصب (یا تنظیمات «نصب از منبع ناشناس») جلوی برنامه بیاید."""
+    t0 = time.time()
+    while time.time() - t0 < timeout:
+        top = current_top()
+        if PKG not in top:
+            log(f'{label}: PROMPT APPEARED after {int(time.time() - t0)}s -> {top}')
+            return True
+        time.sleep(5)
+    status = adb('shell', 'dumpsys', 'downloads')
+    st = re.findall(r'Status:\s*\d+|status=\d+', status)[:3]
+    log(f'{label}: NO PROMPT after {timeout}s; top={current_top()}; downloads={st}')
+    return False
+
+
+def update_flow():
+    # A) در همان صفحه‌ی تنظیمات می‌مانیم تا دانلود تمام شود
+    launch_like_launcher()
+    open_settings_and_press_check()
+    shot('30-update-clicked', 1.0)
+    ok_a = wait_installer('UPDATE A (stayed in settings)')
+    shot('31-update-A-stay', 0.5)
+    launch_like_launcher()
+    # B) حین دانلود از تنظیمات بیرون می‌رویم (کاربر واقعی همین کار را می‌کند)
+    for _ in range(3):
+        if nodes(dump(), 'settings_button'):
+            break
+        back()
+    open_settings_and_press_check()
+    back()
+    ok_b = wait_installer('UPDATE B (left settings during download)')
+    shot('32-update-B-left-settings', 0.5)
+    log(f'UPDATE RESULT: stay={ok_a} leave={ok_b}')
+    launch_like_launcher()
+
+
+def offline_first_run():
+    adb('shell', 'svc', 'wifi', 'disable')
+    adb('shell', 'svc', 'data', 'disable')
+    time.sleep(4)
+    adb('shell', 'pm', 'clear', PKG)
+    adb('shell', 'am', 'start', '-n', f'{PKG}/com.gamesettings.app.MainActivity')
+    wait_nodes('onboard_button', 40)
+    for _ in range(4):
+        tap_next(1.4)
+    time.sleep(6)
+    shot('40-offline-first-run', 0.5)
+    adb('shell', 'svc', 'wifi', 'enable')
+    adb('shell', 'svc', 'data', 'enable')
+    time.sleep(6)
+    adb('shell', 'am', 'force-stop', PKG)
+    launch_like_launcher()
+    wait_nodes('game_name', 40)
+    shot('41-network-back-list', 2.0)
+
+
+def dont_keep_activities():
+    adb('shell', 'settings', 'put', 'global', 'always_finish_activities', '1')
+    try:
+        launch_like_launcher()
+        wait_nodes('game_name', 30)
+        open_first_game()
+        shot('50-dk-detail', 1.5)
+        adb('shell', 'input', 'keyevent', '3')
+        time.sleep(2.5)
+        launch_like_launcher()
+        shot('51-dk-returned', 1.0)
+        log('DK top activity after return: ' + current_top())
+    finally:
+        adb('shell', 'settings', 'put', 'global', 'always_finish_activities', '0')
+
+
 def monkey():
     out = adb('shell', 'monkey', '-p', PKG, '-s', '7', '--throttle', '150', '--pct-syskeys', '0',
               '--pct-appswitch', '0', '-v', '700', timeout=480)
@@ -213,7 +310,11 @@ def collect_logs():
     open(f'{OUT}/logcat-app.txt', 'w', encoding='utf-8').write('\n'.join(keep[-900:]))
     errs = [l for l in keep if re.search(r' [EF] |FATAL|Exception|ANR', l)]
     open(f'{OUT}/logcat-errors.txt', 'w', encoding='utf-8').write('\n'.join(errs[-300:]))
+    leaks = [l for l in full.splitlines() if 'IntentReceiverLeaked' in l or ('leaked' in l.lower() and 'gamesettings' in l)]
+    open(f'{OUT}/logcat-leaks.txt', 'w', encoding='utf-8').write('\n'.join(leaks[-60:]))
     log(f'logcat: {len(keep)} app lines, {len(errs)} error-ish lines')
+    for pat in ('FATAL EXCEPTION', 'IntentReceiverLeaked', 'Leaked', 'StrictMode'):
+        log(f'COUNT {pat}: ' + str(sum(1 for l in full.splitlines() if pat in l and (PKG in l or pat in ('FATAL EXCEPTION', 'IntentReceiverLeaked')))))
 
 
 for title, fn in [
@@ -222,6 +323,9 @@ for title, fn in [
     ('settings + switch to dark', settings_and_themes),
     ('system theme + english', system_and_english),
     ('search + refresh', search_and_refresh),
+    ('update flow (stay vs leave settings)', update_flow),
+    ('offline first run', offline_first_run),
+    ("don't keep activities", dont_keep_activities),
     ('monkey', monkey),
     ('logs', collect_logs),
 ]:
