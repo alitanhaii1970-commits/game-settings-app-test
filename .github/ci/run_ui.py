@@ -230,9 +230,10 @@ def wait_installer(label, timeout=170):
             log(f'{label}: PROMPT APPEARED after {int(time.time() - t0)}s -> {top}')
             return True
         time.sleep(5)
-    status = adb('shell', 'dumpsys', 'downloads')
-    st = re.findall(r'Status:\s*\d+|status=\d+', status)[:3]
-    log(f'{label}: NO PROMPT after {timeout}s; top={current_top()}; downloads={st}')
+    dl = adb('shell', 'dumpsys', 'downloads')
+    open(f'{OUT}/downloads-{label[7:8]}.txt', 'w', encoding='utf-8').write(dl[-5000:])
+    files = adb('shell', 'ls', '-la', f'/sdcard/Android/data/{PKG}/files/Download/')
+    log(f'{label}: NO PROMPT after {timeout}s; top={current_top()}; download dir: {files.strip()[:200]}')
     return False
 
 
@@ -310,6 +311,8 @@ def collect_logs():
     open(f'{OUT}/logcat-app.txt', 'w', encoding='utf-8').write('\n'.join(keep[-900:]))
     errs = [l for l in keep if re.search(r' [EF] |FATAL|Exception|ANR', l)]
     open(f'{OUT}/logcat-errors.txt', 'w', encoding='utf-8').write('\n'.join(errs[-300:]))
+    dl_lines = [l for l in full.splitlines() if re.search(r'DownloadManager|DownloadProvider|DownloadJobService', l)]
+    open(f'{OUT}/logcat-download.txt', 'w', encoding='utf-8').write('\n'.join(dl_lines[-120:]))
     leaks = [l for l in full.splitlines() if 'IntentReceiverLeaked' in l or ('leaked' in l.lower() and 'gamesettings' in l)]
     open(f'{OUT}/logcat-leaks.txt', 'w', encoding='utf-8').write('\n'.join(leaks[-60:]))
     log(f'logcat: {len(keep)} app lines, {len(errs)} error-ish lines')

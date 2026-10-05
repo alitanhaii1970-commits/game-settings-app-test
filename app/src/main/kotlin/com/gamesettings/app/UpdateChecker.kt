@@ -127,7 +127,9 @@ object UpdateChecker {
 
         val filter = IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            context.registerReceiver(receiver, filter, Context.RECEIVER_NOT_EXPORTED)
+            // ⚠️ باگ قبلی: با RECEIVER_NOT_EXPORTED اندروید ۱۳+ پیام «پایان دانلود» (که از سمت
+            // سرویس DownloadManager سیستم می‌آید) را به برنامه نمی‌رساند؛ پس صفحه‌ی نصب هیچ‌وقت باز نمی‌شد.
+            context.registerReceiver(receiver, filter, Context.RECEIVER_EXPORTED)
         } else {
             @Suppress("UnspecifiedRegisterReceiverFlag")
             context.registerReceiver(receiver, filter)
