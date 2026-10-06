@@ -1,0 +1,900 @@
+10-06 04:05:43.463  8222  8243 D EGL_emulation: app_time_stats: avg=43.09ms min=31.12ms max=59.95ms count=22
+10-06 04:05:44.475  8222  8243 D EGL_emulation: app_time_stats: avg=39.74ms min=27.42ms max=63.36ms count=23
+10-06 04:05:45.482  8222  8243 D EGL_emulation: app_time_stats: avg=37.62ms min=22.76ms max=49.14ms count=24
+10-06 04:05:46.509  8222  8243 D EGL_emulation: app_time_stats: avg=36.19ms min=27.66ms max=52.96ms count=25
+10-06 04:05:47.546  8222  8243 D EGL_emulation: app_time_stats: avg=41.03ms min=21.57ms max=55.61ms count=22
+10-06 04:05:48.556  8222  8243 D EGL_emulation: app_time_stats: avg=42.88ms min=24.11ms max=56.63ms count=22
+10-06 04:05:49.593  8222  8243 D EGL_emulation: app_time_stats: avg=38.77ms min=23.17ms max=63.03ms count=24
+10-06 04:05:50.611  8222  8243 D EGL_emulation: app_time_stats: avg=42.94ms min=21.64ms max=58.89ms count=23
+10-06 04:05:51.613  8222  8243 D EGL_emulation: app_time_stats: avg=42.15ms min=21.92ms max=71.57ms count=22
+10-06 04:05:52.630  8222  8243 D EGL_emulation: app_time_stats: avg=43.63ms min=27.10ms max=61.44ms count=22
+10-06 04:05:53.547  8503  8503 D AndroidRuntime: Shutting down VM
+10-06 04:05:53.658  8222  8243 D EGL_emulation: app_time_stats: avg=42.38ms min=27.77ms max=54.04ms count=23
+10-06 04:05:54.659  8222  8243 D EGL_emulation: app_time_stats: avg=40.65ms min=23.66ms max=57.06ms count=23
+10-06 04:05:55.699  8222  8243 D EGL_emulation: app_time_stats: avg=39.46ms min=25.51ms max=53.42ms count=24
+10-06 04:05:56.759  8222  8243 D EGL_emulation: app_time_stats: avg=39.00ms min=25.26ms max=52.37ms count=24
+10-06 04:05:57.781  8222  8243 D EGL_emulation: app_time_stats: avg=43.09ms min=27.25ms max=58.25ms count=22
+10-06 04:05:58.914  8222  8243 D EGL_emulation: app_time_stats: avg=49.95ms min=27.83ms max=160.10ms count=21
+10-06 04:05:58.974   517   536 V WindowManager:     info={id=38 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{a956750 Task{2cc2bfe #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x7fc6890 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{1f57cb1 Task{b2a8dc2 #12 type=standard A=10192:com.gamesettings.app.test}}} m=TO_BACK f=NONE leash=Surface(name=Task=12)/@0xd87503b sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{892efaa token=android.os.Binder@e4b4295})/@0x29485cf sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-06 04:06:01.218  8559  8559 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-06 04:06:01.221  8559  8559 I AndroidRuntime: Using default boot image
+10-06 04:06:01.221  8559  8559 I AndroidRuntime: Leaving lock profiling enabled
+10-06 04:06:01.305  8559  8559 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+10-06 04:06:01.306  8559  8559 W Monkey  : args: [-p, com.gamesettings.app.test, -c, android.intent.category.LAUNCHER, 1]
+10-06 04:06:01.306  8559  8559 W Monkey  :  arg: "com.gamesettings.app.test"
+10-06 04:06:01.307  8559  8559 W Monkey  : data="com.gamesettings.app.test"
+10-06 04:06:01.321   517  1656 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.gamesettings.app.test/com.gamesettings.app.MainActivity} with LAUNCH_MULTIPLE from uid 2000 (BAL_ALLOW_PERMISSION) result code=2
+10-06 04:06:01.321   830   851 V WindowManagerShell: Transition requested: android.os.BinderProxy@b7dd551 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=12 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.gamesettings.app.test/com.gamesettings.app.MainActivity } baseActivity=ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity} topActivity=ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity} origActivity=null realActivity=ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.MainActivity} numActivities=1 lastActiveTime=504928 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@938b1b6} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{c0d4eb7 com.gamesettings.app.OnboardingActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 04:06:01.322   830   851 D WindowManagerShell: onActivityRestartAttempt: ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity}
+10-06 04:06:01.325  8222  8222 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+10-06 04:06:01.325  8222  8222 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-06 04:06:01.353   517   536 V WindowManager: Sent Transition #39 createdAt=10-06 04:06:01.318 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=12 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.gamesettings.app.test/com.gamesettings.app.MainActivity } baseActivity=ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity} topActivity=ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity} origActivity=null realActivity=ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.MainActivity} numActivities=1 lastActiveTime=504928 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{1f57cb1 Task{b2a8dc2 #12 type=standard A=10192:com.gamesettings.app.test}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{ea6ff34 com.gamesettings.app.OnboardingActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 04:06:01.353   517   536 V WindowManager:     info={id=39 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{1f57cb1 Task{b2a8dc2 #12 type=standard A=10192:com.gamesettings.app.test}}} m=TO_FRONT f=MOVE_TO_TOP leash=Surface(name=Task=12)/@0xd87503b sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{a956750 Task{2cc2bfe #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x7fc6890 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-06 04:06:01.426  8559  8559 I AndroidRuntime: VM exiting with result code 0.
+10-06 04:06:01.669   517   536 W ziparchive: Unable to open '/data/app/~~K5hE7J7B9CH8jrn0CV4z_Q==/com.gamesettings.app.test-ngROaUZ5pC41LsBgrMf4Nw==/base.dm': No such file or directory
+10-06 04:06:02.004   517  2500 I ImeTracker: com.gamesettings.app.test:5383f634: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-06 04:06:02.004   517  2500 I ImeTracker: com.gamesettings.app.test:5383f634: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 04:06:02.071  1503  1503 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.gamesettings.app.test fieldId=0 fieldName=null extras=null}, false)
+10-06 04:06:02.869  8222  8243 D EGL_emulation: app_time_stats: avg=58.21ms min=29.18ms max=213.68ms count=20
+10-06 04:06:03.872  8222  8243 D EGL_emulation: app_time_stats: avg=40.54ms min=27.48ms max=50.04ms count=23
+10-06 04:06:04.873  8222  8243 D EGL_emulation: app_time_stats: avg=40.14ms min=26.64ms max=51.86ms count=23
+10-06 04:06:05.893  8222  8243 D EGL_emulation: app_time_stats: avg=44.49ms min=28.94ms max=60.23ms count=21
+10-06 04:06:06.905  8222  8243 D EGL_emulation: app_time_stats: avg=40.17ms min=24.23ms max=66.38ms count=22
+10-06 04:06:06.962  8589  8589 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-06 04:06:06.967  8589  8589 I AndroidRuntime: Using default boot image
+10-06 04:06:06.967  8589  8589 I AndroidRuntime: Leaving lock profiling enabled
+10-06 04:06:07.326  8589  8589 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+10-06 04:06:07.326  8589  8589 W Monkey  : args: [-p, com.gamesettings.app.test, -s, 7, --throttle, 150, --pct-syskeys, 0, --pct-appswitch, 0, -v, 700]
+10-06 04:06:07.326  8589  8589 W Monkey  :  arg: "com.gamesettings.app.test"
+10-06 04:06:07.329  8589  8589 W Monkey  : data="com.gamesettings.app.test"
+10-06 04:06:07.369  8589  8589 I Monkey  : :AllowPackage: com.gamesettings.app.test
+10-06 04:06:07.443  8589  8589 I Monkey  : :Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.gamesettings.app.test/com.gamesettings.app.MainActivity;end
+10-06 04:06:07.467  8589  8589 I Monkey  :     // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.gamesettings.app.test/com.gamesettings.app.MainActivity } in package com.gamesettings.app.test
+10-06 04:06:07.473   517  1656 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.gamesettings.app.test/com.gamesettings.app.MainActivity} with LAUNCH_MULTIPLE from uid 2000 (BAL_ALLOW_PERMISSION) result code=3
+10-06 04:06:07.474   830   851 D WindowManagerShell: onActivityRestartAttempt: ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity}
+10-06 04:06:07.736  1503  1503 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.gamesettings.app.test fieldId=0 fieldName=null extras=null}, false)
+10-06 04:06:07.933  8222  8243 D EGL_emulation: app_time_stats: avg=43.70ms min=24.67ms max=135.70ms count=21
+10-06 04:06:08.967  8222  8243 D EGL_emulation: app_time_stats: avg=87.62ms min=22.74ms max=373.85ms count=11
+10-06 04:06:09.042  8222  8222 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10192; state: ENABLED
+10-06 04:06:09.975  8222  8243 D EGL_emulation: app_time_stats: avg=47.44ms min=22.36ms max=77.03ms count=20
+10-06 04:06:10.008  8222  8222 E RippleDrawable: The RippleDrawable.STYLE_PATTERNED animation is not supported for a non-hardware accelerated Canvas. Skipping animation.
+10-06 04:06:10.009  8222  8222 E RippleDrawable: The RippleDrawable.STYLE_PATTERNED animation is not supported for a non-hardware accelerated Canvas. Skipping animation.
+10-06 04:06:10.011  8222  8222 I ActivityThread: Schedule relaunch activity: com.gamesettings.app.OnboardingActivity
+10-06 04:06:10.257  8222  8222 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@9915f91
+10-06 04:06:10.257   517  2234 D CoreBackPreview: Window{e723aff u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity}: Setting back callback null
+10-06 04:06:10.381  8222  8222 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+10-06 04:06:10.381  8222  8222 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-06 04:06:10.617   517  1656 I WindowManager: finishDrawing of relaunch: Window{e723aff u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity} 416ms
+10-06 04:06:10.621  1503  1503 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.gamesettings.app.test fieldId=0 fieldName=null extras=null}, false)
+10-06 04:06:11.049  8222  8243 D EGL_emulation: app_time_stats: avg=59.16ms min=12.65ms max=196.10ms count=17
+10-06 04:06:11.289  8222  8222 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-06 04:06:12.030  8222  8222 E RippleDrawable: The RippleDrawable.STYLE_PATTERNED animation is not supported for a non-hardware accelerated Canvas. Skipping animation.
+10-06 04:06:12.096  8222  8243 D EGL_emulation: app_time_stats: avg=92.17ms min=29.56ms max=217.72ms count=11
+10-06 04:06:12.927  8222  8222 I ActivityThread: Schedule relaunch activity: com.gamesettings.app.OnboardingActivity
+10-06 04:06:13.018  8222  8229 I ttings.app.test: NativeAlloc concurrent copying GC freed 20885(782KB) AllocSpace objects, 4(208KB) LOS objects, 49% free, 3784KB/7568KB, paused 20us,10us total 112.272ms
+10-06 04:06:13.067  8222  8222 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+10-06 04:06:13.067  8222  8222 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-06 04:06:13.073  8222  8222 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-06 04:06:13.133  8222  8243 D EGL_emulation: app_time_stats: avg=45.39ms min=21.14ms max=124.49ms count=20
+10-06 04:06:13.136   517  1656 I WindowManager: finishDrawing of relaunch: Window{e723aff u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity} 184ms
+10-06 04:06:14.172  8222  8243 D EGL_emulation: app_time_stats: avg=54.83ms min=15.28ms max=85.70ms count=16
+10-06 04:06:14.854  8222  8222 E RippleDrawable: The RippleDrawable.STYLE_PATTERNED animation is not supported for a non-hardware accelerated Canvas. Skipping animation.
+10-06 04:06:14.858  8222  8222 I ActivityThread: Schedule relaunch activity: com.gamesettings.app.OnboardingActivity
+10-06 04:06:15.073  8222  8222 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+10-06 04:06:15.073  8222  8222 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-06 04:06:15.213  8222  8243 D EGL_emulation: app_time_stats: avg=170.23ms min=18.02ms max=700.84ms count=6
+10-06 04:06:15.216   517  2504 I WindowManager: finishDrawing of relaunch: Window{e723aff u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity} 328ms
+10-06 04:06:16.225  8222  8243 D EGL_emulation: app_time_stats: avg=54.87ms min=25.62ms max=119.70ms count=17
+10-06 04:06:16.425  8222  8222 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-06 04:06:16.791  8222  8222 I ActivityThread: Schedule relaunch activity: com.gamesettings.app.OnboardingActivity
+10-06 04:06:17.050  8222  8222 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+10-06 04:06:17.050  8222  8222 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-06 04:06:17.294  8222  8243 D EGL_emulation: app_time_stats: avg=47.50ms min=20.97ms max=99.19ms count=20
+10-06 04:06:17.295   517   589 I WindowManager: finishDrawing of relaunch: Window{e723aff u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity} 469ms
+10-06 04:06:17.492  8222  8222 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-06 04:06:17.955   517   620 W InputDispatcher: Waiting because no window has focus but ActivityRecord{4dd2a5 u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity t12} may eventually add a window when it finishes starting up. Will wait for 5000ms
+10-06 04:06:18.861  8222  8243 D EGL_emulation: app_time_stats: avg=117.33ms min=11.50ms max=841.17ms count=13
+10-06 04:06:19.990  8222  8243 D EGL_emulation: app_time_stats: avg=242.33ms min=14.77ms max=785.31ms count=4
+10-06 04:06:21.319  8222  8243 D EGL_emulation: app_time_stats: avg=106.62ms min=14.56ms max=526.68ms count=12
+10-06 04:06:22.471  8222  8243 D EGL_emulation: app_time_stats: avg=79.09ms min=12.72ms max=271.17ms count=13
+10-06 04:06:23.018   517  2150 I ImeTracker: com.gamesettings.app.test:af051d87: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR
+10-06 04:06:23.018   517  2150 I ImeTracker: com.gamesettings.app.test:af051d87: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 04:06:23.020  1503  1503 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.gamesettings.app.test fieldId=0 fieldName=null extras=null}, false)
+10-06 04:06:23.405  1503  1503 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.gamesettings.app.test fieldId=0 fieldName=null extras=null}, false)
+10-06 04:06:23.539  8222  8243 D EGL_emulation: app_time_stats: avg=83.27ms min=9.84ms max=359.02ms count=11
+10-06 04:06:24.553  8222  8243 D EGL_emulation: app_time_stats: avg=88.48ms min=12.60ms max=312.37ms count=11
+10-06 04:06:24.999   517  2150 I InputDispatcher: Channel [Gesture Monitor] edge-swipe (server) is stealing touch from [e723aff com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity (server), [Gesture Monitor] swipe-up (server)]
+10-06 04:06:25.586  8222  8243 D EGL_emulation: app_time_stats: avg=202.98ms min=33.18ms max=765.98ms count=5
+10-06 04:06:26.593  8222  8243 D EGL_emulation: app_time_stats: avg=37.41ms min=14.97ms max=71.71ms count=24
+10-06 04:06:27.116  8222  8222 W VRI[OnboardingActivity]: Dropping event (no window focus):MotionEvent { action=ACTION_MOVE, actionButton=0, id[0]=0, x[0]=3.0, y[0]=-3.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=533323, downTime=-1, deviceId=-1, source=0x10004, displayId=0, eventId=-619750810 }
+10-06 04:06:27.619  8222  8243 D EGL_emulation: app_time_stats: avg=61.18ms min=21.09ms max=236.31ms count=15
+10-06 04:06:28.648  8222  8243 D EGL_emulation: app_time_stats: avg=92.12ms min=20.69ms max=559.48ms count=11
+10-06 04:06:29.954  8222  8243 D EGL_emulation: app_time_stats: avg=104.98ms min=11.50ms max=380.98ms count=12
+10-06 04:06:30.410   517  2236 I ImeTracker: com.gamesettings.app.test:1e25b37d: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR
+10-06 04:06:30.410   517  2236 I ImeTracker: com.gamesettings.app.test:1e25b37d: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 04:06:30.413  1503  1503 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.gamesettings.app.test fieldId=0 fieldName=null extras=null}, false)
+10-06 04:06:31.013  8222  8243 D EGL_emulation: app_time_stats: avg=163.58ms min=33.13ms max=451.66ms count=6
+10-06 04:06:31.539  1503  1503 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.gamesettings.app.test fieldId=0 fieldName=null extras=null}, false)
+10-06 04:06:32.159  8222  8243 D EGL_emulation: app_time_stats: avg=127.34ms min=31.65ms max=526.28ms count=9
+10-06 04:06:33.181  8222  8243 D EGL_emulation: app_time_stats: avg=35.24ms min=17.92ms max=50.85ms count=27
+10-06 04:06:34.196  8222  8243 D EGL_emulation: app_time_stats: avg=35.00ms min=11.20ms max=64.29ms count=26
+10-06 04:06:34.237   517  2236 W PackageConfigPersister: App-specific configuration not found for packageName: com.gamesettings.app.test and userId: 0
+10-06 04:06:34.254  8589  8601 I Monkey  :     // Allowing start of Intent { cmp=com.gamesettings.app.test/com.gamesettings.app.MainActivity } in package com.gamesettings.app.test
+10-06 04:06:34.259   517  2236 I ActivityTaskManager: START u0 {cmp=com.gamesettings.app.test/com.gamesettings.app.MainActivity} with LAUNCH_MULTIPLE from uid 10192 (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-06 04:06:34.261   830   851 V WindowManagerShell: Transition requested: android.os.BinderProxy@cf9dae0 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=12 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.gamesettings.app.test/com.gamesettings.app.MainActivity } baseActivity=ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity} topActivity=ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.MainActivity} origActivity=null realActivity=ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.MainActivity} numActivities=2 lastActiveTime=540520 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@52a199} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{5c19c5e com.gamesettings.app.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 04:06:34.265  8589  8601 I Monkey  :     // activityResuming(com.gamesettings.app.test)
+10-06 04:06:34.369  8222  8243 D OpenGLRenderer: endAllActiveAnimators on 0x7d2220ef54e0 (RippleDrawable) with handle 0x7d21f0e65290
+10-06 04:06:34.369  8222  8243 D OpenGLRenderer: endAllActiveAnimators on 0x7d2220eec740 (LinearLayout) with handle 0x7d21f0e619c0
+10-06 04:06:34.370   517  1656 W InputManager-JNI: Input channel object 'e723aff com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity (client)' was disposed without first being removed with the input manager!
+10-06 04:06:34.482  8222  8222 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+10-06 04:06:34.482  8222  8222 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-06 04:06:34.503   517  2236 D CoreBackPreview: Window{bc66b0b u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@671c200, mPriority=0, mIsAnimationCallback=false}
+10-06 04:06:34.539   517   620 W InputDispatcher: Waiting because no window has focus but ActivityRecord{401ceef u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity t12} may eventually add a window when it finishes starting up. Will wait for 5000ms
+10-06 04:06:34.610  8222  8222 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-06 04:06:34.723   517  1656 D CoreBackPreview: Window{7b2ce8a u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@269dd7, mPriority=0, mIsAnimationCallback=false}
+10-06 04:06:34.769   517  1656 D ConnectivityService: requestNetwork for uid/pid:10192/8222 activeRequest: null callbackRequest: 179 [NetworkRequest [ REQUEST id=180, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 10192 RequestorPkg: com.gamesettings.app.test UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-06 04:06:34.770   517   752 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=180, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 10192 RequestorPkg: com.gamesettings.app.test UnderlyingNetworks: Null] ]
+10-06 04:06:34.770   517   752 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=180, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 10192 RequestorPkg: com.gamesettings.app.test UnderlyingNetworks: Null] ]
+10-06 04:06:34.770   517   752 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=180, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 10192 RequestorPkg: com.gamesettings.app.test UnderlyingNetworks: Null] ]
+10-06 04:06:34.770   517   752 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=180, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 10192 RequestorPkg: com.gamesettings.app.test UnderlyingNetworks: Null] ]
+10-06 04:06:34.779  8222  8631 W DynamiteModule: Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+10-06 04:06:34.922  8222  8631 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+10-06 04:06:34.922  8222  8631 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+10-06 04:06:35.026  8222  8229 I ttings.app.test: Background young concurrent copying GC freed 42854(1937KB) AllocSpace objects, 8(416KB) LOS objects, 26% free, 5554KB/7568KB, paused 20us,12us total 334.318ms
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a829e74 com.android.cts.priv.ctsshim/10188} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{8e6fb91 com.google.android.youtube/10139} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{79cff9d com.android.internal.display.cutout.emulation.corner/10025} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{428dc12 com.android.internal.display.cutout.emulation.double/10048} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{608a487 com.google.android.googlequicksearchbox/10132} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{5f5fe3 com.google.android.onetimeinitializer/10126} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{4652de0 com.google.android.ext.shared/10100} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e4ef899 com.android.internal.systemui.navbar.gestural_wide_back/10007} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6b4a75e com.android.virtualmachine.res/10191} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{69e173f com.google.android.federatedcompute/10172} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{61f480c com.android.managedprovisioning.auto_generated_rro_product__/10024} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{88d8555 com.android.carrierconfig.auto_generated_rro_vendor__/10078} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{79fdb6a com.android.systemui.emulation.pixel_3_xl/10034} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1e6e85b com.android.systemui.emulation.pixel_4_xl/10059} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b7ed8f8 com.android.systemui.emulation.pixel_fold/10009} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2ee21d1 com.android.simappdialog.auto_generated_rro_product__/10030} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6584436 com.android.htmlviewer/10115} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{21af37 com.google.android.health.connect.backuprestore/10179} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d448ca4 com.android.systemui.auto_generated_rro_product__/10031} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{60e9dd9 com.google.android.apps.messaging/10130} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3e20a0d com.google.android.soundpicker/10136} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{95c6dc2 com.google.android.marvin.talkbackoverlay/10077} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bd807d3 com.google.android.configupdater/10129} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d8fcf10 com.android.internal.emulation.pixel_3a_xl/10044} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{db23a09 com.android.internal.emulation.pixel_6_pro/10018} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e87a40e com.android.internal.emulation.pixel_7_pro/10004} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{4914e2f com.android.internal.emulation.pixel_8_pro/10058} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f0acc3c com.android.internal.emulation.pixel_3a/10053} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{43b6dc5 com.android.internal.emulation.pixel_4a/10011} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{41df31a com.android.internal.emulation.pixel_6a/10023} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ee9e4b com.android.internal.emulation.pixel_7a/10033} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2d67028 com.google.android.overlay.googlewebview/10049} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{26a2141 com.google.android.hotspot2.osulogin/10185} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{69826e6 com.android.simappdialog/10111} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{686d427 com.android.internal.display.cutout.emulation.hole/10073} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{93666d4 com.android.internal.display.cutout.emulation.tall/10065} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b76907d com.android.internal.systemui.navbar.threebutton/10068} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2c140f5 com.android.camera2/10145} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f2fcb72 com.android.systemui.auto_generated_rro_vendor__/10076} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3828bc3 com.google.android.deskclock/10152} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{fd1c40 com.android.internal.systemui.navbar.twobutton/10020} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c4346d2 com.google.android.as/10124} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e257af6 com.google.android.gm/10140} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3e0b779 com.android.internal.systemui.navbar.gestural_extra_wide_back/10045} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f2b2cbe com.android.systemui.emulation.pixel_3/10015} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{5f8211f com.android.systemui.emulation.pixel_4/10037} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1b7bc6c com.android.systemui.emulation.pixel_5/10071} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e2c5235 com.android.systemui.emulation.pixel_6/10074} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3e956ca com.android.systemui.emulation.pixel_7/10072} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d07b03b com.android.systemui.emulation.pixel_8/10070} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c9a3358 com.android.nfc.auto_generated_rro_product__/10027} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{75cdcb1 com.android.printspooler/10104} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{fae1596 com.android.emergency.auto_generated_rro_product__/10041} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{fb71517 com.google.android.connectivity.resources.goldfish.overlay/10079} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2b2d04 com.android.dreams.basic/10103} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f3192ed com.google.android.networkstack.tethering.emulator/10022} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{32df522 com.android.providers.settings.auto_generated_rro_product__/10002} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{58debb3 com.google.android.as.oss/10122} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ab01570 com.android.traceur.auto_generated_rro_product__/10005} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b3d1cfb com.google.android.devicelockcontroller/10180} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b3e802a com.google.android.dialer/10128} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{82170e9 com.android.internal.emulation.pixel_3/10046} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3da416e com.android.internal.emulation.pixel_4/10060} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{cf1900f com.android.internal.emulation.pixel_5/10012} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{759189c com.android.internal.emulation.pixel_6/10038} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b1732a5 com.android.internal.emulation.pixel_7/10067} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{aed067a com.android.internal.emulation.pixel_8/10039} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b411e2b com.google.android.captiveportallogin/10113} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{22d2288 com.android.musicfx/10088} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{aed5421 com.google.android.apps.docs/10155} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c1e21a7 com.google.android.apps.maps/10154} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{9351046 com.google.android.modulemetadata/10147} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2b17207 com.google.android.markup/10135} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{eb5df34 com.android.providers.settings.auto_generated_rro_vendor__/10080} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3aa115d com.google.android.webview/10134} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d4fd34a com.google.android.rkpdapp/10176} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c73cd59 com.google.android.contacts/10153} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ba1ead2 com.android.server.telecom.auto_generated_rro_product__/10032} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{9e927a3 com.google.android.overlay.googleconfig/10055} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d6bbaa0 com.android.chrome/10150} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{17b6659 com.android.bips.auto_generated_rro_product__/10035} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c8fe21e com.google.android.apps.customization.pixel/10143} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{15c9aff com.google.android.tag/10083} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{be1e0cc com.google.android.overlay.permissioncontroller/10003} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b730f15 com.google.android.partnersetup/10125} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{dd4022a com.google.android.apps.wallpaper.nexus/10144} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{269e81b com.google.android.apps.nexuslauncher/10169} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bb23db8 com.google.android.nearby.halfsheet/10187} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e028791 com.android.theme.font.notoserifsource/10066} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{78816f6 com.google.android.safetycenter.resources/10181} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{434eaf7 com.android.internal.display.cutout.emulation.waterfall/10040} BLOCKED
+10-06 04:06:35.064   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c297d64 com.android.internal.systemui.navbar.transparent/10029} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1370bcd com.google.android.connectivity.resources/10186} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{796ac82 com.android.providers.contacts.auto_generated_rro_product__/10019} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2433f93 com.google.android.feedback/10162} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2b30bd0 com.google.android.printservice.recommendation/10109} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6b597c9 com.google.android.apps.photos/10141} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ada56af com.google.android.calendar/10146} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e070ece com.google.android.documentsui/10098} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d841ef com.android.systemui.emulation.pixel_3a_xl/10021} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e0514fc com.android.systemui.emulation.pixel_6_pro/10063} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b76e785 com.android.systemui.emulation.pixel_7_pro/10054} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{20949da com.android.systemui.emulation.pixel_8_pro/10001} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b110e0b com.google.mainline.telemetry/10151} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c84e8 com.android.carrierconfig.auto_generated_rro_product__/10064} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{9437701 com.android.providers.partnerbookmarks/10101} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bc229a6 com.android.wallpaper.livepicker/10090} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6c07fe7 com.android.providers.telephony.auto_generated_rro_product__/10062} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a990794 com.android.phone.auto_generated_rro_vendor__/10081} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3ef823d com.google.mainline.adservices/10137} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ed73a32 com.android.imsserviceentitlement/10117} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a0b3383 com.google.android.healthconnect.controller/10178} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ac90900 com.android.internal.emulation.pixel_2_xl/10016} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e570539 com.android.internal.emulation.pixel_3_xl/10056} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1bac77e com.android.internal.emulation.pixel_4_xl/10047} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ec384df com.android.internal.emulation.pixel_fold/10006} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f35b52c com.android.bookmarkprovider/10114} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{319bbf5 com.google.android.overlay.pixelconfigcommon/10014} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{db7dd8a com.android.systemui.accessibility.accessibilitymenu.auto_generated_rro_product__/10050} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f858ffb com.android.systemui.emulation.pixel_3a/10013} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{4def818 com.android.systemui.emulation.pixel_4a/10000} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d172271 com.android.systemui.emulation.pixel_6a/10042} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3be4856 com.android.systemui.emulation.pixel_7a/10017} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c13b763 com.google.android.settings.intelligence/10118} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1f58412 com.google.android.projection.gearhead/10123} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a9330d7 com.google.android.uwb.resources/10190} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{368d88f com.android.cts.ctsshim/10189} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6d77dc4 com.google.android.wifi.resources/10183} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{baa74ad com.google.android.wifi.dialog/10184} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1ee93e2 com.google.android.apps.wallpaper/10160} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6700373 com.google.android.odad/10121} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{cb0b230 com.android.settings.auto_generated_rro_product__/10028} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ea6aea9 com.android.internal.systemui.navbar.gestural/10051} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{82bebb8 com.google.android.apps.youtube.music/10156} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{5e60c2e com.android.bluetoothmidiservice/10106} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{43d63cf com.android.storagemanager.auto_generated_rro_product__/10026} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3a6c15c com.google.android.cellbroadcastreceiver/10174} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6128c65 com.android.phone.auto_generated_rro_product__/10061} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{7cabd3a android.auto_generated_rro_product__/10069} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bd66deb com.android.internal.systemui.navbar.gestural_narrow_back/10052} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e8c9748 com.google.android.inputmethod.latin/10142} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1a489e1 android.auto_generated_rro_vendor__/10075} BLOCKED
+10-06 04:06:35.065   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a177306 com.google.android.apps.restore/10120} BLOCKED
+10-06 04:06:35.083  8222  8631 D nativeloader: Configuring clns-7 for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-06 04:06:35.114   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a829e74 com.android.cts.priv.ctsshim/10188} BLOCKED
+10-06 04:06:35.114   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{8e6fb91 com.google.android.youtube/10139} BLOCKED
+10-06 04:06:35.114   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{79cff9d com.android.internal.display.cutout.emulation.corner/10025} BLOCKED
+10-06 04:06:35.114   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{428dc12 com.android.internal.display.cutout.emulation.double/10048} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{608a487 com.google.android.googlequicksearchbox/10132} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{5f5fe3 com.google.android.onetimeinitializer/10126} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{4652de0 com.google.android.ext.shared/10100} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e4ef899 com.android.internal.systemui.navbar.gestural_wide_back/10007} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6b4a75e com.android.virtualmachine.res/10191} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{69e173f com.google.android.federatedcompute/10172} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{61f480c com.android.managedprovisioning.auto_generated_rro_product__/10024} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{88d8555 com.android.carrierconfig.auto_generated_rro_vendor__/10078} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{79fdb6a com.android.systemui.emulation.pixel_3_xl/10034} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1e6e85b com.android.systemui.emulation.pixel_4_xl/10059} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b7ed8f8 com.android.systemui.emulation.pixel_fold/10009} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2ee21d1 com.android.simappdialog.auto_generated_rro_product__/10030} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6584436 com.android.htmlviewer/10115} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{21af37 com.google.android.health.connect.backuprestore/10179} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d448ca4 com.android.systemui.auto_generated_rro_product__/10031} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{60e9dd9 com.google.android.apps.messaging/10130} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3e20a0d com.google.android.soundpicker/10136} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{95c6dc2 com.google.android.marvin.talkbackoverlay/10077} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bd807d3 com.google.android.configupdater/10129} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d8fcf10 com.android.internal.emulation.pixel_3a_xl/10044} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{db23a09 com.android.internal.emulation.pixel_6_pro/10018} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e87a40e com.android.internal.emulation.pixel_7_pro/10004} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{4914e2f com.android.internal.emulation.pixel_8_pro/10058} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f0acc3c com.android.internal.emulation.pixel_3a/10053} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{43b6dc5 com.android.internal.emulation.pixel_4a/10011} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{41df31a com.android.internal.emulation.pixel_6a/10023} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ee9e4b com.android.internal.emulation.pixel_7a/10033} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2d67028 com.google.android.overlay.googlewebview/10049} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{26a2141 com.google.android.hotspot2.osulogin/10185} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{69826e6 com.android.simappdialog/10111} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{686d427 com.android.internal.display.cutout.emulation.hole/10073} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{93666d4 com.android.internal.display.cutout.emulation.tall/10065} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b76907d com.android.internal.systemui.navbar.threebutton/10068} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2c140f5 com.android.camera2/10145} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f2fcb72 com.android.systemui.auto_generated_rro_vendor__/10076} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3828bc3 com.google.android.deskclock/10152} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{fd1c40 com.android.internal.systemui.navbar.twobutton/10020} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c4346d2 com.google.android.as/10124} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e257af6 com.google.android.gm/10140} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3e0b779 com.android.internal.systemui.navbar.gestural_extra_wide_back/10045} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f2b2cbe com.android.systemui.emulation.pixel_3/10015} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{5f8211f com.android.systemui.emulation.pixel_4/10037} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1b7bc6c com.android.systemui.emulation.pixel_5/10071} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e2c5235 com.android.systemui.emulation.pixel_6/10074} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3e956ca com.android.systemui.emulation.pixel_7/10072} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d07b03b com.android.systemui.emulation.pixel_8/10070} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c9a3358 com.android.nfc.auto_generated_rro_product__/10027} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{75cdcb1 com.android.printspooler/10104} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{fae1596 com.android.emergency.auto_generated_rro_product__/10041} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{fb71517 com.google.android.connectivity.resources.goldfish.overlay/10079} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2b2d04 com.android.dreams.basic/10103} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f3192ed com.google.android.networkstack.tethering.emulator/10022} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{32df522 com.android.providers.settings.auto_generated_rro_product__/10002} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{58debb3 com.google.android.as.oss/10122} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ab01570 com.android.traceur.auto_generated_rro_product__/10005} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b3d1cfb com.google.android.devicelockcontroller/10180} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b3e802a com.google.android.dialer/10128} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{82170e9 com.android.internal.emulation.pixel_3/10046} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3da416e com.android.internal.emulation.pixel_4/10060} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{cf1900f com.android.internal.emulation.pixel_5/10012} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{759189c com.android.internal.emulation.pixel_6/10038} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b1732a5 com.android.internal.emulation.pixel_7/10067} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{aed067a com.android.internal.emulation.pixel_8/10039} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b411e2b com.google.android.captiveportallogin/10113} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{22d2288 com.android.musicfx/10088} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{aed5421 com.google.android.apps.docs/10155} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c1e21a7 com.google.android.apps.maps/10154} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{9351046 com.google.android.modulemetadata/10147} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2b17207 com.google.android.markup/10135} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{eb5df34 com.android.providers.settings.auto_generated_rro_vendor__/10080} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3aa115d com.google.android.webview/10134} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d4fd34a com.google.android.rkpdapp/10176} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c73cd59 com.google.android.contacts/10153} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ba1ead2 com.android.server.telecom.auto_generated_rro_product__/10032} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{9e927a3 com.google.android.overlay.googleconfig/10055} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d6bbaa0 com.android.chrome/10150} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{17b6659 com.android.bips.auto_generated_rro_product__/10035} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c8fe21e com.google.android.apps.customization.pixel/10143} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{15c9aff com.google.android.tag/10083} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{be1e0cc com.google.android.overlay.permissioncontroller/10003} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b730f15 com.google.android.partnersetup/10125} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{dd4022a com.google.android.apps.wallpaper.nexus/10144} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{269e81b com.google.android.apps.nexuslauncher/10169} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bb23db8 com.google.android.nearby.halfsheet/10187} BLOCKED
+10-06 04:06:35.115   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e028791 com.android.theme.font.notoserifsource/10066} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{78816f6 com.google.android.safetycenter.resources/10181} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{434eaf7 com.android.internal.display.cutout.emulation.waterfall/10040} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c297d64 com.android.internal.systemui.navbar.transparent/10029} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1370bcd com.google.android.connectivity.resources/10186} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{796ac82 com.android.providers.contacts.auto_generated_rro_product__/10019} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2433f93 com.google.android.feedback/10162} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2b30bd0 com.google.android.printservice.recommendation/10109} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6b597c9 com.google.android.apps.photos/10141} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ada56af com.google.android.calendar/10146} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e070ece com.google.android.documentsui/10098} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d841ef com.android.systemui.emulation.pixel_3a_xl/10021} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e0514fc com.android.systemui.emulation.pixel_6_pro/10063} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b76e785 com.android.systemui.emulation.pixel_7_pro/10054} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{20949da com.android.systemui.emulation.pixel_8_pro/10001} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b110e0b com.google.mainline.telemetry/10151} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c84e8 com.android.carrierconfig.auto_generated_rro_product__/10064} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{9437701 com.android.providers.partnerbookmarks/10101} BLOCKED
+10-06 04:06:35.116   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bc229a6 com.android.wallpaper.livepicker/10090} BLOCKED
+10-06 04:06:35.120   517   536 I ActivityTaskManager: Displayed com.gamesettings.app.test/com.gamesettings.app.MainActivity for user 0: +855ms
+10-06 04:06:35.120   830   851 V WindowManagerShell: onTransitionReady android.os.BinderProxy@cf9dae0: {id=41 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=FILLS_TASK leash=Surface(name=ActivityRecord{401ceef u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity)/@0xfc8683f sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2400) d=-1->0 r=-1->0:-1},{null m=CLOSE f=FILLS_TASK leash=Surface(name=ActivityRecord{4dd2a5 u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity)/@0x7d1c50c sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-06 04:06:35.121   830   851 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=41 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=FILLS_TASK leash=Surface(name=ActivityRecord{401ceef u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity)/@0xfc8683f sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2400) d=-1->0 r=-1->0:-1},{null m=CLOSE f=FILLS_TASK leash=Surface(name=ActivityRecord{4dd2a5 u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity)/@0x7d1c50c sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-06 04:06:35.121   517   536 V WindowManager: Sent Transition #41 createdAt=10-06 04:06:34.256 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=12 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.gamesettings.app.test/com.gamesettings.app.MainActivity } baseActivity=ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity} topActivity=ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.MainActivity} origActivity=null realActivity=ComponentInfo{com.gamesettings.app.test/com.gamesettings.app.MainActivity} numActivities=2 lastActiveTime=540520 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{1f57cb1 Task{b2a8dc2 #12 type=standard A=10192:com.gamesettings.app.test}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{ffde165 com.gamesettings.app.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-06 04:06:35.121   830   851 V WindowManagerShell: start default transition animation, info = {id=41 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=FILLS_TASK leash=Surface(name=ActivityRecord{401ceef u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity)/@0xfc8683f sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2400) d=-1->0 r=-1->0:-1},{null m=CLOSE f=FILLS_TASK leash=Surface(name=ActivityRecord{4dd2a5 u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity)/@0x7d1c50c sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-06 04:06:35.121   517   536 V WindowManager:     info={id=41 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=FILLS_TASK leash=Surface(name=ActivityRecord{401ceef u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity)/@0x13170cf sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2400) d=-1->0 r=-1->0:-1},{null m=CLOSE f=FILLS_TASK leash=Surface(name=ActivityRecord{4dd2a5 u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity)/@0x4393046 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6c07fe7 com.android.providers.telephony.auto_generated_rro_product__/10062} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a990794 com.android.phone.auto_generated_rro_vendor__/10081} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3ef823d com.google.mainline.adservices/10137} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ed73a32 com.android.imsserviceentitlement/10117} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a0b3383 com.google.android.healthconnect.controller/10178} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ac90900 com.android.internal.emulation.pixel_2_xl/10016} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e570539 com.android.internal.emulation.pixel_3_xl/10056} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1bac77e com.android.internal.emulation.pixel_4_xl/10047} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ec384df com.android.internal.emulation.pixel_fold/10006} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f35b52c com.android.bookmarkprovider/10114} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{319bbf5 com.google.android.overlay.pixelconfigcommon/10014} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{db7dd8a com.android.systemui.accessibility.accessibilitymenu.auto_generated_rro_product__/10050} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f858ffb com.android.systemui.emulation.pixel_3a/10013} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{4def818 com.android.systemui.emulation.pixel_4a/10000} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d172271 com.android.systemui.emulation.pixel_6a/10042} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3be4856 com.android.systemui.emulation.pixel_7a/10017} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c13b763 com.google.android.settings.intelligence/10118} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1f58412 com.google.android.projection.gearhead/10123} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a9330d7 com.google.android.uwb.resources/10190} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{368d88f com.android.cts.ctsshim/10189} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6d77dc4 com.google.android.wifi.resources/10183} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{baa74ad com.google.android.wifi.dialog/10184} BLOCKED
+10-06 04:06:35.121   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1ee93e2 com.google.android.apps.wallpaper/10160} BLOCKED
+10-06 04:06:35.122   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6700373 com.google.android.odad/10121} BLOCKED
+10-06 04:06:35.122   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{cb0b230 com.android.settings.auto_generated_rro_product__/10028} BLOCKED
+10-06 04:06:35.122   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ea6aea9 com.android.internal.systemui.navbar.gestural/10051} BLOCKED
+10-06 04:06:35.122   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{82bebb8 com.google.android.apps.youtube.music/10156} BLOCKED
+10-06 04:06:35.122   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{5e60c2e com.android.bluetoothmidiservice/10106} BLOCKED
+10-06 04:06:35.122   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{43d63cf com.android.storagemanager.auto_generated_rro_product__/10026} BLOCKED
+10-06 04:06:35.122   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3a6c15c com.google.android.cellbroadcastreceiver/10174} BLOCKED
+10-06 04:06:35.122   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6128c65 com.android.phone.auto_generated_rro_product__/10061} BLOCKED
+10-06 04:06:35.122   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{7cabd3a android.auto_generated_rro_product__/10069} BLOCKED
+10-06 04:06:35.122   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bd66deb com.android.internal.systemui.navbar.gestural_narrow_back/10052} BLOCKED
+10-06 04:06:35.122   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e8c9748 com.google.android.inputmethod.latin/10142} BLOCKED
+10-06 04:06:35.122   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1a489e1 android.auto_generated_rro_vendor__/10075} BLOCKED
+10-06 04:06:35.122   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a177306 com.google.android.apps.restore/10120} BLOCKED
+10-06 04:06:35.147  8222  8631 D nativeloader: Configuring clns-8 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-06 04:06:35.154  8222  8631 D nativeloader: Configuring clns-9 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a829e74 com.android.cts.priv.ctsshim/10188} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{8e6fb91 com.google.android.youtube/10139} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{79cff9d com.android.internal.display.cutout.emulation.corner/10025} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{428dc12 com.android.internal.display.cutout.emulation.double/10048} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{608a487 com.google.android.googlequicksearchbox/10132} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{5f5fe3 com.google.android.onetimeinitializer/10126} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{4652de0 com.google.android.ext.shared/10100} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e4ef899 com.android.internal.systemui.navbar.gestural_wide_back/10007} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6b4a75e com.android.virtualmachine.res/10191} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{69e173f com.google.android.federatedcompute/10172} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{61f480c com.android.managedprovisioning.auto_generated_rro_product__/10024} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{88d8555 com.android.carrierconfig.auto_generated_rro_vendor__/10078} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{79fdb6a com.android.systemui.emulation.pixel_3_xl/10034} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1e6e85b com.android.systemui.emulation.pixel_4_xl/10059} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b7ed8f8 com.android.systemui.emulation.pixel_fold/10009} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2ee21d1 com.android.simappdialog.auto_generated_rro_product__/10030} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6584436 com.android.htmlviewer/10115} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{21af37 com.google.android.health.connect.backuprestore/10179} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d448ca4 com.android.systemui.auto_generated_rro_product__/10031} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{60e9dd9 com.google.android.apps.messaging/10130} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3e20a0d com.google.android.soundpicker/10136} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{95c6dc2 com.google.android.marvin.talkbackoverlay/10077} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bd807d3 com.google.android.configupdater/10129} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d8fcf10 com.android.internal.emulation.pixel_3a_xl/10044} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{db23a09 com.android.internal.emulation.pixel_6_pro/10018} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e87a40e com.android.internal.emulation.pixel_7_pro/10004} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{4914e2f com.android.internal.emulation.pixel_8_pro/10058} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f0acc3c com.android.internal.emulation.pixel_3a/10053} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{43b6dc5 com.android.internal.emulation.pixel_4a/10011} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{41df31a com.android.internal.emulation.pixel_6a/10023} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ee9e4b com.android.internal.emulation.pixel_7a/10033} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2d67028 com.google.android.overlay.googlewebview/10049} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{26a2141 com.google.android.hotspot2.osulogin/10185} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{69826e6 com.android.simappdialog/10111} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{686d427 com.android.internal.display.cutout.emulation.hole/10073} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{93666d4 com.android.internal.display.cutout.emulation.tall/10065} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b76907d com.android.internal.systemui.navbar.threebutton/10068} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2c140f5 com.android.camera2/10145} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f2fcb72 com.android.systemui.auto_generated_rro_vendor__/10076} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3828bc3 com.google.android.deskclock/10152} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{fd1c40 com.android.internal.systemui.navbar.twobutton/10020} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c4346d2 com.google.android.as/10124} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e257af6 com.google.android.gm/10140} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3e0b779 com.android.internal.systemui.navbar.gestural_extra_wide_back/10045} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f2b2cbe com.android.systemui.emulation.pixel_3/10015} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{5f8211f com.android.systemui.emulation.pixel_4/10037} BLOCKED
+10-06 04:06:35.154   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1b7bc6c com.android.systemui.emulation.pixel_5/10071} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e2c5235 com.android.systemui.emulation.pixel_6/10074} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3e956ca com.android.systemui.emulation.pixel_7/10072} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d07b03b com.android.systemui.emulation.pixel_8/10070} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c9a3358 com.android.nfc.auto_generated_rro_product__/10027} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{75cdcb1 com.android.printspooler/10104} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{fae1596 com.android.emergency.auto_generated_rro_product__/10041} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{fb71517 com.google.android.connectivity.resources.goldfish.overlay/10079} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2b2d04 com.android.dreams.basic/10103} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f3192ed com.google.android.networkstack.tethering.emulator/10022} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{32df522 com.android.providers.settings.auto_generated_rro_product__/10002} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{58debb3 com.google.android.as.oss/10122} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ab01570 com.android.traceur.auto_generated_rro_product__/10005} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b3d1cfb com.google.android.devicelockcontroller/10180} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b3e802a com.google.android.dialer/10128} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{82170e9 com.android.internal.emulation.pixel_3/10046} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3da416e com.android.internal.emulation.pixel_4/10060} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{cf1900f com.android.internal.emulation.pixel_5/10012} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{759189c com.android.internal.emulation.pixel_6/10038} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b1732a5 com.android.internal.emulation.pixel_7/10067} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{aed067a com.android.internal.emulation.pixel_8/10039} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b411e2b com.google.android.captiveportallogin/10113} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{22d2288 com.android.musicfx/10088} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{aed5421 com.google.android.apps.docs/10155} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c1e21a7 com.google.android.apps.maps/10154} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{9351046 com.google.android.modulemetadata/10147} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2b17207 com.google.android.markup/10135} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{eb5df34 com.android.providers.settings.auto_generated_rro_vendor__/10080} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3aa115d com.google.android.webview/10134} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d4fd34a com.google.android.rkpdapp/10176} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c73cd59 com.google.android.contacts/10153} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ba1ead2 com.android.server.telecom.auto_generated_rro_product__/10032} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{9e927a3 com.google.android.overlay.googleconfig/10055} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d6bbaa0 com.android.chrome/10150} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{17b6659 com.android.bips.auto_generated_rro_product__/10035} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c8fe21e com.google.android.apps.customization.pixel/10143} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{15c9aff com.google.android.tag/10083} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{be1e0cc com.google.android.overlay.permissioncontroller/10003} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b730f15 com.google.android.partnersetup/10125} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{dd4022a com.google.android.apps.wallpaper.nexus/10144} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{269e81b com.google.android.apps.nexuslauncher/10169} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bb23db8 com.google.android.nearby.halfsheet/10187} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e028791 com.android.theme.font.notoserifsource/10066} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{78816f6 com.google.android.safetycenter.resources/10181} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{434eaf7 com.android.internal.display.cutout.emulation.waterfall/10040} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c297d64 com.android.internal.systemui.navbar.transparent/10029} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1370bcd com.google.android.connectivity.resources/10186} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{796ac82 com.android.providers.contacts.auto_generated_rro_product__/10019} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2433f93 com.google.android.feedback/10162} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2b30bd0 com.google.android.printservice.recommendation/10109} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6b597c9 com.google.android.apps.photos/10141} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ada56af com.google.android.calendar/10146} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e070ece com.google.android.documentsui/10098} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d841ef com.android.systemui.emulation.pixel_3a_xl/10021} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e0514fc com.android.systemui.emulation.pixel_6_pro/10063} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b76e785 com.android.systemui.emulation.pixel_7_pro/10054} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{20949da com.android.systemui.emulation.pixel_8_pro/10001} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b110e0b com.google.mainline.telemetry/10151} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c84e8 com.android.carrierconfig.auto_generated_rro_product__/10064} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{9437701 com.android.providers.partnerbookmarks/10101} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bc229a6 com.android.wallpaper.livepicker/10090} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6c07fe7 com.android.providers.telephony.auto_generated_rro_product__/10062} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a990794 com.android.phone.auto_generated_rro_vendor__/10081} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3ef823d com.google.mainline.adservices/10137} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ed73a32 com.android.imsserviceentitlement/10117} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a0b3383 com.google.android.healthconnect.controller/10178} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ac90900 com.android.internal.emulation.pixel_2_xl/10016} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e570539 com.android.internal.emulation.pixel_3_xl/10056} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1bac77e com.android.internal.emulation.pixel_4_xl/10047} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ec384df com.android.internal.emulation.pixel_fold/10006} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f35b52c com.android.bookmarkprovider/10114} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{319bbf5 com.google.android.overlay.pixelconfigcommon/10014} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{db7dd8a com.android.systemui.accessibility.accessibilitymenu.auto_generated_rro_product__/10050} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f858ffb com.android.systemui.emulation.pixel_3a/10013} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{4def818 com.android.systemui.emulation.pixel_4a/10000} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d172271 com.android.systemui.emulation.pixel_6a/10042} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3be4856 com.android.systemui.emulation.pixel_7a/10017} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c13b763 com.google.android.settings.intelligence/10118} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1f58412 com.google.android.projection.gearhead/10123} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a9330d7 com.google.android.uwb.resources/10190} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{368d88f com.android.cts.ctsshim/10189} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6d77dc4 com.google.android.wifi.resources/10183} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{baa74ad com.google.android.wifi.dialog/10184} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1ee93e2 com.google.android.apps.wallpaper/10160} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6700373 com.google.android.odad/10121} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{cb0b230 com.android.settings.auto_generated_rro_product__/10028} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ea6aea9 com.android.internal.systemui.navbar.gestural/10051} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{82bebb8 com.google.android.apps.youtube.music/10156} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{5e60c2e com.android.bluetoothmidiservice/10106} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{43d63cf com.android.storagemanager.auto_generated_rro_product__/10026} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3a6c15c com.google.android.cellbroadcastreceiver/10174} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6128c65 com.android.phone.auto_generated_rro_product__/10061} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{7cabd3a android.auto_generated_rro_product__/10069} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bd66deb com.android.internal.systemui.navbar.gestural_narrow_back/10052} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e8c9748 com.google.android.inputmethod.latin/10142} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1a489e1 android.auto_generated_rro_vendor__/10075} BLOCKED
+10-06 04:06:35.155   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a177306 com.google.android.apps.restore/10120} BLOCKED
+10-06 04:06:35.164  8222  8631 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-06 04:06:35.164  8222  8631 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a829e74 com.android.cts.priv.ctsshim/10188} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{8e6fb91 com.google.android.youtube/10139} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{79cff9d com.android.internal.display.cutout.emulation.corner/10025} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{428dc12 com.android.internal.display.cutout.emulation.double/10048} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{608a487 com.google.android.googlequicksearchbox/10132} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{5f5fe3 com.google.android.onetimeinitializer/10126} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{4652de0 com.google.android.ext.shared/10100} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e4ef899 com.android.internal.systemui.navbar.gestural_wide_back/10007} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6b4a75e com.android.virtualmachine.res/10191} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{69e173f com.google.android.federatedcompute/10172} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{61f480c com.android.managedprovisioning.auto_generated_rro_product__/10024} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{88d8555 com.android.carrierconfig.auto_generated_rro_vendor__/10078} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{79fdb6a com.android.systemui.emulation.pixel_3_xl/10034} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1e6e85b com.android.systemui.emulation.pixel_4_xl/10059} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b7ed8f8 com.android.systemui.emulation.pixel_fold/10009} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2ee21d1 com.android.simappdialog.auto_generated_rro_product__/10030} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6584436 com.android.htmlviewer/10115} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{21af37 com.google.android.health.connect.backuprestore/10179} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d448ca4 com.android.systemui.auto_generated_rro_product__/10031} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{60e9dd9 com.google.android.apps.messaging/10130} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3e20a0d com.google.android.soundpicker/10136} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{95c6dc2 com.google.android.marvin.talkbackoverlay/10077} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bd807d3 com.google.android.configupdater/10129} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d8fcf10 com.android.internal.emulation.pixel_3a_xl/10044} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{db23a09 com.android.internal.emulation.pixel_6_pro/10018} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e87a40e com.android.internal.emulation.pixel_7_pro/10004} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{4914e2f com.android.internal.emulation.pixel_8_pro/10058} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f0acc3c com.android.internal.emulation.pixel_3a/10053} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{43b6dc5 com.android.internal.emulation.pixel_4a/10011} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{41df31a com.android.internal.emulation.pixel_6a/10023} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ee9e4b com.android.internal.emulation.pixel_7a/10033} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2d67028 com.google.android.overlay.googlewebview/10049} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{26a2141 com.google.android.hotspot2.osulogin/10185} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{69826e6 com.android.simappdialog/10111} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{686d427 com.android.internal.display.cutout.emulation.hole/10073} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{93666d4 com.android.internal.display.cutout.emulation.tall/10065} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b76907d com.android.internal.systemui.navbar.threebutton/10068} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2c140f5 com.android.camera2/10145} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f2fcb72 com.android.systemui.auto_generated_rro_vendor__/10076} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3828bc3 com.google.android.deskclock/10152} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{fd1c40 com.android.internal.systemui.navbar.twobutton/10020} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c4346d2 com.google.android.as/10124} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e257af6 com.google.android.gm/10140} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3e0b779 com.android.internal.systemui.navbar.gestural_extra_wide_back/10045} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f2b2cbe com.android.systemui.emulation.pixel_3/10015} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{5f8211f com.android.systemui.emulation.pixel_4/10037} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1b7bc6c com.android.systemui.emulation.pixel_5/10071} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e2c5235 com.android.systemui.emulation.pixel_6/10074} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3e956ca com.android.systemui.emulation.pixel_7/10072} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d07b03b com.android.systemui.emulation.pixel_8/10070} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c9a3358 com.android.nfc.auto_generated_rro_product__/10027} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{75cdcb1 com.android.printspooler/10104} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{fae1596 com.android.emergency.auto_generated_rro_product__/10041} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{fb71517 com.google.android.connectivity.resources.goldfish.overlay/10079} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2b2d04 com.android.dreams.basic/10103} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f3192ed com.google.android.networkstack.tethering.emulator/10022} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{32df522 com.android.providers.settings.auto_generated_rro_product__/10002} BLOCKED
+10-06 04:06:35.171   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{58debb3 com.google.android.as.oss/10122} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ab01570 com.android.traceur.auto_generated_rro_product__/10005} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b3d1cfb com.google.android.devicelockcontroller/10180} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b3e802a com.google.android.dialer/10128} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{82170e9 com.android.internal.emulation.pixel_3/10046} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3da416e com.android.internal.emulation.pixel_4/10060} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{cf1900f com.android.internal.emulation.pixel_5/10012} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{759189c com.android.internal.emulation.pixel_6/10038} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b1732a5 com.android.internal.emulation.pixel_7/10067} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{aed067a com.android.internal.emulation.pixel_8/10039} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b411e2b com.google.android.captiveportallogin/10113} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{22d2288 com.android.musicfx/10088} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{aed5421 com.google.android.apps.docs/10155} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c1e21a7 com.google.android.apps.maps/10154} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{9351046 com.google.android.modulemetadata/10147} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2b17207 com.google.android.markup/10135} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{eb5df34 com.android.providers.settings.auto_generated_rro_vendor__/10080} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3aa115d com.google.android.webview/10134} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d4fd34a com.google.android.rkpdapp/10176} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c73cd59 com.google.android.contacts/10153} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ba1ead2 com.android.server.telecom.auto_generated_rro_product__/10032} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{9e927a3 com.google.android.overlay.googleconfig/10055} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d6bbaa0 com.android.chrome/10150} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{17b6659 com.android.bips.auto_generated_rro_product__/10035} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c8fe21e com.google.android.apps.customization.pixel/10143} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{15c9aff com.google.android.tag/10083} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{be1e0cc com.google.android.overlay.permissioncontroller/10003} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b730f15 com.google.android.partnersetup/10125} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{dd4022a com.google.android.apps.wallpaper.nexus/10144} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{269e81b com.google.android.apps.nexuslauncher/10169} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bb23db8 com.google.android.nearby.halfsheet/10187} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e028791 com.android.theme.font.notoserifsource/10066} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{78816f6 com.google.android.safetycenter.resources/10181} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{434eaf7 com.android.internal.display.cutout.emulation.waterfall/10040} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c297d64 com.android.internal.systemui.navbar.transparent/10029} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1370bcd com.google.android.connectivity.resources/10186} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{796ac82 com.android.providers.contacts.auto_generated_rro_product__/10019} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2433f93 com.google.android.feedback/10162} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{2b30bd0 com.google.android.printservice.recommendation/10109} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6b597c9 com.google.android.apps.photos/10141} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ada56af com.google.android.calendar/10146} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e070ece com.google.android.documentsui/10098} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d841ef com.android.systemui.emulation.pixel_3a_xl/10021} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e0514fc com.android.systemui.emulation.pixel_6_pro/10063} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b76e785 com.android.systemui.emulation.pixel_7_pro/10054} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{20949da com.android.systemui.emulation.pixel_8_pro/10001} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{b110e0b com.google.mainline.telemetry/10151} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c84e8 com.android.carrierconfig.auto_generated_rro_product__/10064} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{9437701 com.android.providers.partnerbookmarks/10101} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bc229a6 com.android.wallpaper.livepicker/10090} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6c07fe7 com.android.providers.telephony.auto_generated_rro_product__/10062} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a990794 com.android.phone.auto_generated_rro_vendor__/10081} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3ef823d com.google.mainline.adservices/10137} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ed73a32 com.android.imsserviceentitlement/10117} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a0b3383 com.google.android.healthconnect.controller/10178} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ac90900 com.android.internal.emulation.pixel_2_xl/10016} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e570539 com.android.internal.emulation.pixel_3_xl/10056} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1bac77e com.android.internal.emulation.pixel_4_xl/10047} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ec384df com.android.internal.emulation.pixel_fold/10006} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f35b52c com.android.bookmarkprovider/10114} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{319bbf5 com.google.android.overlay.pixelconfigcommon/10014} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{db7dd8a com.android.systemui.accessibility.accessibilitymenu.auto_generated_rro_product__/10050} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{f858ffb com.android.systemui.emulation.pixel_3a/10013} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{4def818 com.android.systemui.emulation.pixel_4a/10000} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{d172271 com.android.systemui.emulation.pixel_6a/10042} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3be4856 com.android.systemui.emulation.pixel_7a/10017} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{c13b763 com.google.android.settings.intelligence/10118} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1f58412 com.google.android.projection.gearhead/10123} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a9330d7 com.google.android.uwb.resources/10190} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{368d88f com.android.cts.ctsshim/10189} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6d77dc4 com.google.android.wifi.resources/10183} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{baa74ad com.google.android.wifi.dialog/10184} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1ee93e2 com.google.android.apps.wallpaper/10160} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6700373 com.google.android.odad/10121} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{cb0b230 com.android.settings.auto_generated_rro_product__/10028} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{ea6aea9 com.android.internal.systemui.navbar.gestural/10051} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{82bebb8 com.google.android.apps.youtube.music/10156} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{5e60c2e com.android.bluetoothmidiservice/10106} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{43d63cf com.android.storagemanager.auto_generated_rro_product__/10026} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{3a6c15c com.google.android.cellbroadcastreceiver/10174} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{6128c65 com.android.phone.auto_generated_rro_product__/10061} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{7cabd3a android.auto_generated_rro_product__/10069} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{bd66deb com.android.internal.systemui.navbar.gestural_narrow_back/10052} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e8c9748 com.google.android.inputmethod.latin/10142} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{1a489e1 android.auto_generated_rro_vendor__/10075} BLOCKED
+10-06 04:06:35.172   517  1656 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{a177306 com.google.android.apps.restore/10120} BLOCKED
+10-06 04:06:35.182  8222  8631 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+10-06 04:06:35.184  8222  8631 D nativeloader: Configuring product-clns-10 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+10-06 04:06:35.199  8222  8631 D nativeloader: InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+10-06 04:06:35.200  8222  8631 W ProviderInstaller: Failed to report request stats: java.lang.NoSuchMethodException: com.google.android.gms.common.security.ProviderInstallerImpl.reportRequestStats2 [class android.content.Context, long, long]
+10-06 04:06:35.207  8222  8631 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+10-06 04:06:35.219  8222  8631 W ttings.app.test: Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (unsupported, reflection, allowed)
+10-06 04:06:35.540  8222  8234 I OpenGLRenderer: Davey! duration=805ms; Flags=0, FrameTimelineVsyncId=102451, IntendedVsync=540971371812, Vsync=541371371796, InputEventId=0, HandleInputStart=541386788336, AnimationStart=541386792282, PerformTraversalsStart=541392865404, DrawStart=541393577985, FrameDeadline=541404705128, FrameInterval=541371631946, FrameStartTime=16666666, SyncQueued=541395007223, SyncStart=541401026374, IssueDrawCommandsStart=541402913013, SwapBuffers=541677269252, FrameCompleted=541782486464, DequeueBufferDuration=4507, QueueBufferDuration=8661536, GpuCompleted=541782438563, SwapBuffersCompleted=541782486464, DisplayPresentTime=0, CommandSubmissionCompleted=541677269252, 
+10-06 04:06:35.547   517  2236 I ImeTracker: com.gamesettings.app.test:d8843104: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-06 04:06:35.547   517  2236 I ImeTracker: com.gamesettings.app.test:d8843104: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-06 04:06:35.549  1503  1503 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.gamesettings.app.test fieldId=0 fieldName=null extras=null}, false)
+10-06 04:06:35.631  8222  8631 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+10-06 04:06:35.758   517  2500 D ConnectivityService: requestNetwork for uid/pid:10192/8222 activeRequest: null callbackRequest: 181 [NetworkRequest [ REQUEST id=182, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 10192 RequestorPkg: com.gamesettings.app.test UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-06 04:06:35.763   517   752 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=182, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 10192 RequestorPkg: com.gamesettings.app.test UnderlyingNetworks: Null] ]
+10-06 04:06:35.763   517   752 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=182, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 10192 RequestorPkg: com.gamesettings.app.test UnderlyingNetworks: Null] ]
+10-06 04:06:35.763   517   752 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=182, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 10192 RequestorPkg: com.gamesettings.app.test UnderlyingNetworks: Null] ]
+10-06 04:06:35.763   517   752 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=182, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 10192 RequestorPkg: com.gamesettings.app.test UnderlyingNetworks: Null] ]
+10-06 04:06:35.770  8222  8222 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@12c878e
+10-06 04:06:35.776   517  2500 D CoreBackPreview: Window{bc66b0b u0 com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity}: Setting back callback null
+10-06 04:06:35.780   517  2500 W InputManager-JNI: Input channel object 'bc66b0b com.gamesettings.app.test/com.gamesettings.app.OnboardingActivity (client)' was disposed without first being removed with the input manager!
+10-06 04:06:36.008  8222  8630 W ttings.app.test: Verification of androidx.datastore.core.DataStore androidx.datastore.core.DataStoreFactory.create(androidx.datastore.core.Storage, androidx.datastore.core.handlers.ReplaceFileCorruptionHandler, java.util.List, kotlinx.coroutines.CoroutineScope) took 100.222ms (498.89 bytecodes/s) (2640B approximate peak alloc)
+10-06 04:06:36.036  8222  8639 W ttings.app.test: Verification of void io.grpc.internal.InternalSubchannel.startNewTransport() took 128.565ms (1322.28 bytecodes/s) (7440B approximate peak alloc)
+10-06 04:06:36.153   517  2236 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e8c9748 com.google.android.inputmethod.latin/10142} BLOCKED
+10-06 04:06:36.170  8222  8643 D TrafficStats: tagSocket(141) with statsTag=0xffffffff, statsUid=-1
+10-06 04:06:36.207  8222  8222 D CompatibilityChangeReporter: Compat change id reported: 163400105; UID 10192; state: ENABLED
+10-06 04:06:36.211  8222  8643 W ttings.app.test: Accessing hidden field Ljava/net/Socket;->impl:Ljava/net/SocketImpl; (unsupported, reflection, allowed)
+10-06 04:06:36.212  1503  1503 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x1(Normal) imeOptions=0x6 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=non-empty label=null packageName=com.gamesettings.app.test fieldId=2131296690 fieldName=null extras=Bundle[mParcelledData.dataSize=240]}, false)
+10-06 04:06:36.240  8222  8222 I AssistStructure: Flattened final assist data: 1464 bytes, containing 1 windows, 8 views
+10-06 04:06:36.243   517  2236 D ContentCapturePerUserService: Notified activity assist data for activity: Token{dac1dfc ActivityRecord{401ceef u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity t12}} without a session Id
+10-06 04:06:36.263  8222  8222 I ImeTracker: com.gamesettings.app.test:5d43636: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+10-06 04:06:36.263  8222  8222 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{c94b1ea VFED..CL. .F.P.... 42,195-1038,323 #7f0901b2 app:id/search_box aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-06 04:06:36.273  1503  1503 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x1(Normal) imeOptions=0x6 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=non-empty label=null packageName=com.gamesettings.app.test fieldId=2131296690 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+10-06 04:06:36.276   517  2500 I AppsFilter: interaction: PackageSetting{f1e2d2e com.gamesettings.app.test/10192} -> PackageSetting{e8c9748 com.google.android.inputmethod.latin/10142} BLOCKED
+10-06 04:06:36.329  1503  1503 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x1(Normal) imeOptions=0x6 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=non-empty label=null packageName=com.gamesettings.app.test fieldId=2131296690 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+10-06 04:06:36.342  8222  8222 I AssistStructure: Flattened final assist data: 1464 bytes, containing 1 windows, 8 views
+10-06 04:06:36.345   517  2236 D ContentCapturePerUserService: Notified activity assist data for activity: Token{dac1dfc ActivityRecord{401ceef u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity t12}} without a session Id
+10-06 04:06:36.367  8222  8229 I ttings.app.test: Background concurrent copying GC freed 33768(2230KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 5772KB/11MB, paused 4.209ms,52us total 446.584ms
+10-06 04:06:36.621  8222  8243 D EGL_emulation: app_time_stats: avg=93.47ms min=30.72ms max=423.41ms count=16
+10-06 04:06:36.713   517  2504 D CoreBackPreview: Window{7b2ce8a u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@8396ec0, mPriority=0, mIsAnimationCallback=false}
+10-06 04:06:36.766  8222  8222 D InsetsController: show(ime(), fromIme=true)
+10-06 04:06:36.839  8222  8222 I ImeTracker: com.gamesettings.app.test:9504516a: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+10-06 04:06:36.839  8222  8222 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{c94b1ea VFED..CL. .F.P..ID 42,195-1038,323 #7f0901b2 app:id/search_box aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-06 04:06:36.843  8222  8643 W ttings.app.test: Accessing hidden method Ljava/security/spec/ECParameterSpec;->setCurveName(Ljava/lang/String;)V (unsupported, reflection, allowed)
+10-06 04:06:36.888  8222  8222 D InsetsController: show(ime(), fromIme=true)
+10-06 04:06:36.895  8222  8222 I ImeTracker: com.gamesettings.app.test:9504516a: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: Build configuration failed!
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: java.lang.IllegalArgumentException: Must pass in a valid surface control if only instrument surface; 
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at com.android.internal.jank.InteractionJankMonitor$Configuration.validate(InteractionJankMonitor.java:1259)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at com.android.internal.jank.InteractionJankMonitor$Configuration.<init>(InteractionJankMonitor.java:1217)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at com.android.internal.jank.InteractionJankMonitor$Configuration.<init>(Unknown Source:0)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at com.android.internal.jank.InteractionJankMonitor$Configuration$Builder.build(InteractionJankMonitor.java:1197)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at com.android.internal.jank.InteractionJankMonitor.begin(InteractionJankMonitor.java:611)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.view.inputmethod.ImeTracker$ImeJankTracker.onRequestAnimation(ImeTracker.java:717)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.view.InsetsController$InternalAnimationControlListener$2.onAnimationStart(InsetsController.java:448)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.animation.Animator$AnimatorListener.onAnimationStart(Animator.java:695)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.animation.Animator$AnimatorCaller$$ExternalSyntheticLambda0.call(Unknown Source:4)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.animation.Animator.callOnList(Animator.java:669)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.animation.Animator.notifyListeners(Animator.java:608)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.animation.Animator.notifyStartListeners(Animator.java:625)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.animation.ValueAnimator.startAnimation(ValueAnimator.java:1334)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.animation.ValueAnimator.start(ValueAnimator.java:1149)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.animation.ValueAnimator.start(ValueAnimator.java:1173)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.view.InsetsController$InternalAnimationControlListener.onReady(InsetsController.java:470)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.view.InsetsAnimationThreadControlRunner.lambda$new$0(InsetsAnimationThreadControlRunner.java:129)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.view.InsetsAnimationThreadControlRunner.$r8$lambda$3zGKYd3XPzPnvMO2hiF8a88M6T0(Unknown Source:0)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.view.InsetsAnimationThreadControlRunner$$ExternalSyntheticLambda2.run(Unknown Source:6)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.os.Handler.handleCallback(Handler.java:958)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.os.Looper.loopOnce(Looper.java:205)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.os.Looper.loop(Looper.java:294)
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-06 04:06:37.204  8222  8222 I ImeTracker: com.gamesettings.app.test:5d43636: onShown
+10-06 04:06:37.459  8222  8222 I ImeTracker: com.gamesettings.app.test:e53856cd: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+10-06 04:06:37.459  8222  8222 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{c94b1ea VFED..CL. .F.P.... 42,195-1038,323 #7f0901b2 app:id/search_box aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-06 04:06:37.533  8222  8222 D InsetsController: show(ime(), fromIme=true)
+10-06 04:06:37.533  8222  8222 I ImeTracker: com.gamesettings.app.test:e53856cd: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+10-06 04:06:37.662  8222  8243 D EGL_emulation: app_time_stats: avg=64.75ms min=33.36ms max=121.78ms count=14
+10-06 04:06:38.688  8222  8243 D EGL_emulation: app_time_stats: avg=60.32ms min=27.56ms max=129.04ms count=14
+10-06 04:06:38.809  8222  8222 I ImeTracker: com.gamesettings.app.test:c3352a82: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+10-06 04:06:38.809  8222  8222 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{c94b1ea VFED..CL. .F.P.... 42,195-1038,323 #7f0901b2 app:id/search_box aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-06 04:06:38.919  8222  8222 D InsetsController: show(ime(), fromIme=true)
+10-06 04:06:38.919  8222  8222 I ImeTracker: com.gamesettings.app.test:c3352a82: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+10-06 04:06:39.754  8222  8243 D EGL_emulation: app_time_stats: avg=72.72ms min=35.63ms max=150.04ms count=14
+10-06 04:06:40.147  8222  8222 I ImeTracker: com.gamesettings.app.test:9d300a60: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+10-06 04:06:40.151  8222  8222 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{c94b1ea VFED..CL. .F.P.... 42,195-1038,323 #7f0901b2 app:id/search_box aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-06 04:06:40.348  8222  8222 D InsetsController: show(ime(), fromIme=true)
+10-06 04:06:40.349  8222  8222 I ImeTracker: com.gamesettings.app.test:9d300a60: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+10-06 04:06:40.529  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.531  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.532  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.574  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.577  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.580  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.584  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.589  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.590  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.590  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.591  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.591  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.592  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.596  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.596  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.597  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.600  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.601  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.601  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.602  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.603  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.603  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.604  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.605  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.606  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.606  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.607  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.607  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.609  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.609  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.610  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.611  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.611  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.612  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.612  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.613  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.614  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.615  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.616  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.616  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.617  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.617  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.618  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.619  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.619  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.620  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.620  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.626  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.627  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.630  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.631  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.632  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.633  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.635  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.636  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.636  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.639  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.639  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.640  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.640  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.641  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.641  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.641  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.642  8222  8222 W Firestore: (26.1.2) [CustomClassMapper]: No setter/field for settingsFrameGen found on class com.gamesettings.app.Game
+10-06 04:06:40.662  8222  8222 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10192; state: ENABLED
+10-06 04:06:41.028  8222  8644 W ttings.app.test: Verification of boolean okhttp3.internal.platform.android.ConscryptSocketAdapter$Companion$factory$1.matchesSocket(javax.net.ssl.SSLSocket) took 128.473ms (179.03 bytecodes/s) (2040B approximate peak alloc)
+10-06 04:06:41.169  8222  8666 W ttings.app.test: Verification of void okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(java.net.Proxy) took 110.308ms (2665.26 bytecodes/s) (8784B approximate peak alloc)
+10-06 04:06:41.304  8222  8229 I ttings.app.test: Background young concurrent copying GC freed 92441(4358KB) AllocSpace objects, 2(104KB) LOS objects, 42% free, 6668KB/11MB, paused 30us,16us total 128.976ms
+10-06 04:06:41.317  8222  8666 D TrafficStats: tagSocket(93) with statsTag=0xffffffff, statsUid=-1
+10-06 04:06:41.326  8222  8670 D TrafficStats: tagSocket(127) with statsTag=0xffffffff, statsUid=-1
+10-06 04:06:41.327  8222  8668 D TrafficStats: tagSocket(154) with statsTag=0xffffffff, statsUid=-1
+10-06 04:06:41.328  8222  8667 D TrafficStats: tagSocket(155) with statsTag=0xffffffff, statsUid=-1
+10-06 04:06:41.328  8222  8669 D TrafficStats: tagSocket(156) with statsTag=0xffffffff, statsUid=-1
+10-06 04:06:41.340   517   620 W InputDispatcher: Dispatching key to 7b2ce8a com.gamesettings.app.test/com.gamesettings.app.MainActivity even though there are other unprocessed events
+10-06 04:06:41.464  8222  8243 D EGL_emulation: app_time_stats: avg=167.78ms min=29.14ms max=891.78ms count=10
+10-06 04:06:41.954  8222  8701 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-06 04:06:42.479  8222  8243 D EGL_emulation: app_time_stats: avg=91.46ms min=18.01ms max=309.91ms count=11
+10-06 04:06:42.505  8222  8222 I ImeTracker: com.gamesettings.app.test:c6559cd0: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+10-06 04:06:42.505  8222  8222 D InputMethodManager: showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{c94b1ea VFED..CL. .F.P.... 42,195-1038,323 #7f0901b2 app:id/search_box aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-06 04:06:42.539  8222  8222 D InsetsController: show(ime(), fromIme=true)
+10-06 04:06:42.539  8222  8222 I ImeTracker: com.gamesettings.app.test:c6559cd0: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+10-06 04:06:42.870  8222  8222 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@45773e5
+10-06 04:06:43.390   517   934 W NotificationService: Toast already killed. pkg=com.gamesettings.app.test token=android.os.BinderProxy@77ce85a
+10-06 04:06:43.481  8222  8243 D EGL_emulation: app_time_stats: avg=488.41ms min=126.46ms max=850.36ms count=2
+10-06 04:06:43.865   517   934 D CoreBackPreview: startBackNavigation currentTask=Task{b2a8dc2 #12 type=standard A=10192:com.gamesettings.app.test}, topRunningActivity=ActivityRecord{401ceef u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity t12}, callbackInfo=OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@8396ec0, mPriority=0, mIsAnimationCallback=false}, currentFocus=Window{7b2ce8a u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity}
+10-06 04:06:43.866  8589  8589 I AndroidRuntime: VM exiting with result code 0.
+10-06 04:06:43.867  8222  8222 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10192; state: ENABLED
+10-06 04:06:44.806  8222  8243 D EGL_emulation: app_time_stats: avg=441.66ms min=318.67ms max=508.36ms count=3

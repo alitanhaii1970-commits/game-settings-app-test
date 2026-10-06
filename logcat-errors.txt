@@ -1,0 +1,24 @@
+10-06 03:58:08.364  1687  2172 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-06 03:58:08.364  1687  2172 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-06 03:58:11.941   517   620 I WindowManager: ANR in ActivityRecord{85a04f4 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t7}.  Reason: Input dispatching timed out (Application does not have a focused window)
+10-06 03:58:19.399   517  2183 V SplashScreenExceptionList: SplashScreen checking exception for package com.gamesettings.app.test (target sdk:34) -> false
+10-06 03:58:25.899   517  2656 E ActivityManager: ANR in com.google.android.apps.nexuslauncher (com.google.android.apps.nexuslauncher/.NexusLauncherActivity)
+10-06 03:58:56.360  4330  4440 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-06 03:58:56.360  4330  4440 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-06 03:58:56.360  4330  4440 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-06 03:58:56.360  4330  4440 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-06 03:58:56.360  4330  4440 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-06 03:58:56.360  4330  4440 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-06 04:01:05.457  3325  3325 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::0@0@com.gamesettings.app.test>
+10-06 04:01:07.880  3325  3325 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::1@0@com.gamesettings.app.test>
+10-06 04:01:56.868   517  2235 V SplashScreenExceptionList: SplashScreen checking exception for package com.gamesettings.app.test (target sdk:34) -> false
+10-06 04:01:56.968   517   533 W WindowManager: Exception thrown during dispatchAppVisibility Window{d986af4 u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity EXITING}
+10-06 04:03:23.006   517  2503 V SplashScreenExceptionList: SplashScreen checking exception for package com.gamesettings.app.test (target sdk:34) -> false
+10-06 04:03:25.859  8222  8247 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(wmsSync-VRI[OnboardingActivity]#0) as ready
+10-06 04:03:25.871  8222  8247 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(VRI[OnboardingActivity]#1) as ready
+10-06 04:06:10.008  8222  8222 E RippleDrawable: The RippleDrawable.STYLE_PATTERNED animation is not supported for a non-hardware accelerated Canvas. Skipping animation.
+10-06 04:06:10.009  8222  8222 E RippleDrawable: The RippleDrawable.STYLE_PATTERNED animation is not supported for a non-hardware accelerated Canvas. Skipping animation.
+10-06 04:06:12.030  8222  8222 E RippleDrawable: The RippleDrawable.STYLE_PATTERNED animation is not supported for a non-hardware accelerated Canvas. Skipping animation.
+10-06 04:06:14.854  8222  8222 E RippleDrawable: The RippleDrawable.STYLE_PATTERNED animation is not supported for a non-hardware accelerated Canvas. Skipping animation.
+10-06 04:06:35.200  8222  8631 W ProviderInstaller: Failed to report request stats: java.lang.NoSuchMethodException: com.google.android.gms.common.security.ProviderInstallerImpl.reportRequestStats2 [class android.content.Context, long, long]
+10-06 04:06:36.956  8222  8652 D InteractionJankMonitor: java.lang.IllegalArgumentException: Must pass in a valid surface control if only instrument surface; 

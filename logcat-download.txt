@@ -1,0 +1,60 @@
+10-06 03:57:46.818   517   517 I PackageManager: /system/priv-app/DownloadProviderUi changed; collecting certs
+10-06 03:57:46.819   517   517 I PackageManager: /system/priv-app/DownloadProvider changed; collecting certs
+10-06 03:57:56.316   517   637 I ArtService: Dexopt result: [packageName = com.android.providers.downloads] DexContainerFileDexoptResult{dexContainerFile=/system/priv-app/DownloadProvider/DownloadProvider.apk, primaryAbi=true, abi=x86_64, actualCompilerFilter=verify, status=SKIPPED, dex2oatWallTimeMillis=0, dex2oatCpuTimeMillis=0, sizeBytes=0, sizeBeforeBytes=0}
+10-06 03:57:56.338   517   637 I ArtService: Dexopt result: [packageName = com.android.providers.downloads.ui] DexContainerFileDexoptResult{dexContainerFile=/system/priv-app/DownloadProviderUi/DownloadProviderUi.apk, primaryAbi=true, abi=x86_64, actualCompilerFilter=verify, status=SKIPPED, dex2oatWallTimeMillis=0, dex2oatCpuTimeMillis=0, sizeBytes=0, sizeBeforeBytes=0}
+10-06 03:58:07.266  1053  1053 D CarrierKeyDownloadManager: Carrier Config changed: slotIndex=0
+10-06 03:58:07.266  1053  1053 D CarrierKeyDownloadManager: Carrier not enabled or invalid values. mKeyAvailability=0 mURL=null
+10-06 03:58:07.266  1053  1053 D CarrierKeyDownloadManager: Cleaning up existing renewal alarms
+10-06 03:58:08.225  2002  2002 D nativeloader: Configuring clns-shared-8 for other apk /system/priv-app/DownloadProvider/DownloadProvider.apk. target_sdk_version=34, uses_libraries=, library_path=/system/priv-app/DownloadProvider/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.android.providers.downloads:/system/priv-app/DownloadProvider:/system/lib64:/system_ext/lib64
+10-06 03:58:08.231  2002  2002 I DownloadManager: Upgrading downloads database from version 0 to version 114, which will destroy all old data
+10-06 03:58:22.826  1053  1053 D CarrierKeyDownloadManager: Carrier Config changed: slotIndex=0
+10-06 03:58:22.940  1053  1053 D CarrierKeyDownloadManager: Carrier not enabled or invalid values. mKeyAvailability=0 mURL=null
+10-06 03:58:22.940  1053  1053 D CarrierKeyDownloadManager: Cleaning up existing renewal alarms
+10-06 03:59:25.432  2002  5428 D DownloadManager: [2] Starting
+10-06 03:59:25.745  2002  5428 D DownloadManager: [2] Finished with status SUCCESS
+10-06 03:59:25.819  2002  5447 D DownloadManager: [1] Starting
+10-06 03:59:26.440  2002  5447 D DownloadManager: [1] Finished with status SUCCESS
+10-06 03:59:31.213  1503  1794 I DownloadManager: DownloadManager.downloadInternal():385 Download for nebulae-lc-artifacts scheduled with params DownloadParams{allowMetered=false, requireCharging=false, foreground=false, immediately=false, priority=0}
+10-06 03:59:31.223  1503  1503 I DownloadManager: DownloadManager.startDownload():471 start download of nebulae-lc-artifacts
+10-06 03:59:32.037  2002  5659 D DownloadManager: [3] Starting
+10-06 03:59:32.249  2002  5666 D DownloadManager: [4] Starting
+10-06 03:59:32.830  2002  5666 D DownloadManager: [4] Finished with status SUCCESS
+10-06 03:59:32.835  2002  5659 D DownloadManager: [3] Finished with status SUCCESS
+10-06 03:59:33.257  2002  5673 D DownloadManager: [5] Starting
+10-06 03:59:33.638  2002  5673 D DownloadManager: [5] Finished with status SUCCESS
+10-06 03:59:44.491  2002  2079 V DownloadManager: Deleting /storage/emulated/0/Android/data/com.google.android.googlequicksearchbox/files/pending_blobs/odws2_en_us_753_2019-09-12_270573492_release_signed via provider delete
+10-06 03:59:44.799  3306  3646 E DownloadManagerWrapper: Can't find downloadId=2
+10-06 03:59:45.412  2002  2098 V DownloadManager: Deleting /storage/emulated/0/Android/data/com.google.android.googlequicksearchbox/files/pending_blobs/brain_en_us_201705_arm32_release_signed via provider delete
+10-06 03:59:45.829  3306  3646 E DownloadManagerWrapper: Can't find downloadId=1
+10-06 03:59:46.913  2002  5880 D DownloadManager: [6] Starting
+10-06 03:59:47.056  2002  5886 D DownloadManager: [7] Starting
+10-06 03:59:47.144  2002  5880 D DownloadManager: [6] Finished with status SUCCESS
+10-06 03:59:47.211  2002  5888 D DownloadManager: [8] Starting
+10-06 03:59:47.382  2002  5904 D DownloadManager: [9] Starting
+10-06 03:59:47.477  2002  5888 D DownloadManager: [8] Finished with status SUCCESS
+10-06 03:59:47.629  2002  5904 D DownloadManager: [9] Finished with status SUCCESS
+10-06 03:59:47.660  2002  5886 D DownloadManager: [7] Finished with status SUCCESS
+10-06 03:59:47.759  2002  2064 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/08202014-metadata.txt via provider delete
+10-06 03:59:47.767  2002  2064 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/08202014-pins.txt via provider delete
+10-06 03:59:47.811  2002  2064 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/05132026-sms-denylist-metadata.txt via provider delete
+10-06 03:59:47.834  2002  2064 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/05132026-sms-denylist.txt via provider delete
+10-06 03:59:47.955  2002  5913 D DownloadManager: [10] Starting
+10-06 03:59:48.045  2002  5917 D DownloadManager: [11] Starting
+10-06 03:59:48.684  2002  5924 D DownloadManager: [12] Starting
+10-06 03:59:48.929  2002  5913 D DownloadManager: [10] Finished with status SUCCESS
+10-06 03:59:48.935  2002  5917 D DownloadManager: [11] Finished with status SUCCESS
+10-06 03:59:49.166  2002  2080 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.model.metadata via provider delete
+10-06 03:59:49.198  2002  2080 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.model via provider delete
+10-06 03:59:49.582  2002  5924 D DownloadManager: [12] Finished with status SUCCESS
+10-06 03:59:49.659  2002  2591 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.fb.metadata via provider delete
+10-06 03:59:49.734  2002  5958 D DownloadManager: [13] Starting
+10-06 03:59:49.736  2002  2591 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.fb via provider delete
+10-06 03:59:49.807  2002  2591 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/model.smfb.metadata via provider delete
+10-06 03:59:49.809  2002  2591 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/model.smfb via provider delete
+10-06 04:00:04.167  2002  5958 D DownloadManager: [13] Finished with status SUCCESS
+10-06 04:00:05.967  2002  6118 V DownloadManager: Deleting /storage/emulated/0/Android/data/com.google.android.googlequicksearchbox/files/download_cache/soda-en-US-v1001.zip via provider delete
+10-06 04:01:11.786  1595  1595 W JobService: onNetworkChanged() not implemented in com.google.android.apps.miphone.aiai.common.superpacks.impl.AiAiPersistentDownloadJobService. Must override in a subclass.
+10-06 04:01:18.509  2002  7195 D DownloadManager: [14] Starting
+10-06 04:01:20.295  2002  7195 D DownloadManager: [14] Finished with status SUCCESS
+10-06 04:01:39.222  2002  7423 D DownloadManager: [15] Starting
+10-06 04:01:41.664  2002  7423 D DownloadManager: [15] Finished with status SUCCESS
