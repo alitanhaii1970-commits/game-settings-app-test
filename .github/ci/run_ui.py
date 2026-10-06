@@ -237,24 +237,51 @@ def wait_installer(label, timeout=170):
     return False
 
 
+def cleanup_installer():
+    """صفحه‌ی نصبِ بازمانده نباید در مرحله‌های بعدی تداخل ایجاد کند."""
+    adb('shell', 'am', 'force-stop', 'com.google.android.packageinstaller')
+    adb('shell', 'am', 'force-stop', 'com.android.packageinstaller')
+    adb('shell', 'input', 'keyevent', '3')
+    time.sleep(1.5)
+
+
+def press_check_and_leave():
+    """دکمه‌ی بررسی آپدیت را می‌زند و بلافاصله از تنظیمات بیرون می‌رود (کاربری که صبر نمی‌کند)."""
+    tap_id('settings_button')
+    swipe_up()
+    ns = wait_nodes('check_update_button', 15)
+    if not ns:
+        log('WARN check_update_button not found')
+        return
+    x, y = center(ns[0])
+    tap_xy(x, y)
+    adb('shell', 'input', 'keyevent', '4')
+    time.sleep(0.8)
+
+
 def update_flow():
     # A) در همان صفحه‌ی تنظیمات می‌مانیم تا دانلود تمام شود
+    cleanup_installer()
     launch_like_launcher()
+    log('A start top: ' + current_top())
     open_settings_and_press_check()
     shot('30-update-clicked', 1.0)
     ok_a = wait_installer('UPDATE A (stayed in settings)')
     shot('31-update-A-stay', 0.5)
+    cleanup_installer()
     launch_like_launcher()
-    # B) حین دانلود از تنظیمات بیرون می‌رویم (کاربر واقعی همین کار را می‌کند)
+    # B) بلافاصله بعد از زدن دکمه از تنظیمات بیرون می‌رویم (قبل از پایان دانلود)
     for _ in range(3):
         if nodes(dump(), 'settings_button'):
             break
         back()
-    open_settings_and_press_check()
-    back()
-    ok_b = wait_installer('UPDATE B (left settings during download)')
+    log('B start top: ' + current_top())
+    press_check_and_leave()
+    log('B after leaving settings, top: ' + current_top())
+    ok_b = wait_installer('UPDATE B (left settings right after tapping)')
     shot('32-update-B-left-settings', 0.5)
     log(f'UPDATE RESULT: stay={ok_a} leave={ok_b}')
+    cleanup_installer()
     launch_like_launcher()
 
 
