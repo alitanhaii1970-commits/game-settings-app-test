@@ -1,0 +1,2 @@
+10-06 03:58:18.384  4707  4707 E ActivityThread: android.app.IntentReceiverLeaked: Service com.google.android.ims.service.JibeService has leaked IntentReceiver bsch@aff804c that was originally registered here. Are you missing a call to unregisterReceiver()?
+10-06 03:58:18.422  4707  4707 E ActivityThread: android.app.IntentReceiverLeaked: Service com.google.android.ims.service.JibeService has leaked IntentReceiver com.google.android.ims.receiver.sip.DebugOptionsReceiver@cf7087f that was originally registered here. Are you missing a call to unregisterReceiver()?

@@ -1,0 +1,89 @@
+جمع مشکلات: 88
+[Warning] Autofill: Missing `autofillHints` attribute  @ app/src/main/res/layout/activity_main.xml:63
+[Warning] ClickableViewAccessibility: Custom view ``FrameLayout`` has `setOnTouchListener` called on it but does not override `performClick`  @ app/src/main/kotlin/com/gamesettings/app/GameDetailActivity.kt:76
+[Warning] ClickableViewAccessibility: `onTouch` lambda should call `View#performClick` when a click is detected  @ app/src/main/kotlin/com/gamesettings/app/GameDetailActivity.kt:76
+[Warning] DiscouragedApi: Should not restrict activity to fixed orientation. This may not be suitable for different form factors, causing the app to be letterboxed.  @ app/src/main/AndroidManifest.xml:21
+[Warning] DiscouragedApi: Should not restrict activity to fixed orientation. This may not be suitable for different form factors, causing the app to be letterboxed.  @ app/src/main/AndroidManifest.xml:31
+[Warning] DiscouragedApi: Should not restrict activity to fixed orientation. This may not be suitable for different form factors, causing the app to be letterboxed.  @ app/src/main/AndroidManifest.xml:36
+[Warning] DiscouragedApi: Should not restrict activity to fixed orientation. This may not be suitable for different form factors, causing the app to be letterboxed.  @ app/src/main/AndroidManifest.xml:42
+[Warning] DiscouragedApi: Should not restrict activity to fixed orientation. This may not be suitable for different form factors, causing the app to be letterboxed.  @ app/src/main/AndroidManifest.xml:48
+[Warning] GradleDependency: A newer version of androidx.core:core-ktx than 1.13.1 is available: 1.19.1  @ app/build.gradle.kts:46
+[Warning] GradleDependency: A newer version of androidx.appcompat:appcompat than 1.7.0 is available: 1.8.0  @ app/build.gradle.kts:47
+[Warning] GradleDependency: A newer version of com.google.android.material:material than 1.12.0 is available: 1.14.0  @ app/build.gradle.kts:48
+[Warning] GradleDependency: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.2  @ app/build.gradle.kts:49
+[Warning] GradleDependency: A newer version of androidx.recyclerview:recyclerview than 1.3.2 is available: 1.4.0  @ app/build.gradle.kts:50
+[Warning] GradleDependency: A newer version of androidx.coordinatorlayout:coordinatorlayout than 1.2.0 is available: 1.3.0  @ app/build.gradle.kts:52
+[Warning] GradleDependency: A newer version of com.google.firebase:firebase-bom than 34.11.0 is available: 34.19.0  @ app/build.gradle.kts:55
+[Warning] IconDuplicates: The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png  @ app/src/main/res/mipmap-hdpi/ic_launcher_round.png:
+[Warning] IconDuplicates: The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png  @ app/src/main/res/mipmap-mdpi/ic_launcher_round.png:
+[Warning] IconDuplicates: The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png  @ app/src/main/res/mipmap-xhdpi/ic_launcher_round.png:
+[Warning] IconDuplicates: The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png  @ app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png:
+[Warning] IconDuplicates: The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_round.png  @ app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png:
+[Warning] IconLauncherShape: Launcher icons should not fill every pixel of their square region; see the design guide for details  @ app/src/main/res/mipmap-hdpi/ic_launcher.png:
+[Warning] IconLauncherShape: Launcher icons should not fill every pixel of their square region; see the design guide for details  @ app/src/main/res/mipmap-mdpi/ic_launcher.png:
+[Warning] IconLauncherShape: Launcher icons should not fill every pixel of their square region; see the design guide for details  @ app/src/main/res/mipmap-xhdpi/ic_launcher.png:
+[Warning] IconLauncherShape: Launcher icons should not fill every pixel of their square region; see the design guide for details  @ app/src/main/res/mipmap-xxhdpi/ic_launcher.png:
+[Warning] IconLauncherShape: Launcher icons should not fill every pixel of their square region; see the design guide for details  @ app/src/main/res/mipmap-xxxhdpi/ic_launcher.png:
+[Warning] IconLauncherShape: Launcher icon used as round icon did not have a circular shape  @ app/src/main/res/mipmap-hdpi/ic_launcher_round.png:
+[Warning] IconLauncherShape: Launcher icon used as round icon did not have a circular shape  @ app/src/main/res/mipmap-mdpi/ic_launcher_round.png:
+[Warning] IconLauncherShape: Launcher icon used as round icon did not have a circular shape  @ app/src/main/res/mipmap-xhdpi/ic_launcher_round.png:
+[Warning] IconLauncherShape: Launcher icon used as round icon did not have a circular shape  @ app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png:
+[Warning] IconLauncherShape: Launcher icon used as round icon did not have a circular shape  @ app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png:
+[Warning] IconLocation: Found bitmap drawable `res/drawable/app_logo.png` in densityless folder  @ app/src/main/res/drawable/app_logo.png:
+[Warning] LockedOrientationActivity: Expecting `android:screenOrientation="unspecified"` or `"fullSensor"` for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices  @ app/src/main/AndroidManifest.xml:21
+[Warning] LockedOrientationActivity: Expecting `android:screenOrientation="unspecified"` or `"fullSensor"` for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices  @ app/src/main/AndroidManifest.xml:31
+[Warning] LockedOrientationActivity: Expecting `android:screenOrientation="unspecified"` or `"fullSensor"` for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices  @ app/src/main/AndroidManifest.xml:36
+[Warning] LockedOrientationActivity: Expecting `android:screenOrientation="unspecified"` or `"fullSensor"` for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices  @ app/src/main/AndroidManifest.xml:42
+[Warning] LockedOrientationActivity: Expecting `android:screenOrientation="unspecified"` or `"fullSensor"` for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices  @ app/src/main/AndroidManifest.xml:48
+[Warning] MonochromeLauncherIcon: The application adaptive icon is missing a monochrome tag  @ app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml:2
+[Warning] MonochromeLauncherIcon: The application adaptive roundIcon is missing a monochrome tag  @ app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml:2
+[Warning] NotifyDataSetChanged: It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.  @ app/src/main/kotlin/com/gamesettings/app/GameAdapter.kt:28
+[Warning] NotifyDataSetChanged: It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.  @ app/src/main/kotlin/com/gamesettings/app/MainActivity.kt:119
+[Warning] OldTargetApi: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.  @ app/build.gradle.kts:14
+[Warning] UnusedAttribute: Attribute `localeConfig` is only used in API level 33 and higher (current min is 24)  @ app/src/main/AndroidManifest.xml:16
+[Warning] UnusedAttribute: Attribute `clipToOutline` is only used in API level 31 and higher (current min is 24)  @ app/src/main/res/layout/activity_game_detail.xml:39
+[Warning] UnusedAttribute: Attribute `clipToOutline` is only used in API level 31 and higher (current min is 24)  @ app/src/main/res/layout/activity_main.xml:26
+[Warning] UnusedAttribute: Attribute `clipToOutline` is only used in API level 31 and higher (current min is 24)  @ app/src/main/res/layout/activity_onboarding.xml:43
+[Warning] UnusedAttribute: Attribute `clipToOutline` is only used in API level 31 and higher (current min is 24)  @ app/src/main/res/layout/activity_settings.xml:205
+[Warning] UnusedAttribute: Attribute `clipToOutline` is only used in API level 31 and higher (current min is 24)  @ app/src/main/res/layout/item_game.xml:22
+[Warning] UnusedResources: The resource `R.color.accent_red_dark` appears to be unused  @ app/src/main/res/values/colors.xml:14
+[Warning] UnusedResources: The resource `R.color.black` appears to be unused  @ app/src/main/res/values/colors.xml:32
+[Warning] UnusedResources: The resource `R.dimen.spacing_xxs` appears to be unused  @ app/src/main/res/values/dimens.xml:8
+[Warning] UnusedResources: The resource `R.dimen.spacing_xs` appears to be unused  @ app/src/main/res/values/dimens.xml:9
+[Warning] UnusedResources: The resource `R.dimen.spacing_s` appears to be unused  @ app/src/main/res/values/dimens.xml:10
+[Warning] UnusedResources: The resource `R.dimen.spacing_m` appears to be unused  @ app/src/main/res/values/dimens.xml:11
+[Warning] UnusedResources: The resource `R.dimen.spacing_l` appears to be unused  @ app/src/main/res/values/dimens.xml:12
+[Warning] UnusedResources: The resource `R.dimen.spacing_xl` appears to be unused  @ app/src/main/res/values/dimens.xml:13
+[Warning] UnusedResources: The resource `R.dimen.spacing_xxl` appears to be unused  @ app/src/main/res/values/dimens.xml:14
+[Warning] UnusedResources: The resource `R.dimen.radius_chip` appears to be unused  @ app/src/main/res/values/dimens.xml:17
+[Warning] UnusedResources: The resource `R.dimen.radius_button` appears to be unused  @ app/src/main/res/values/dimens.xml:18
+[Warning] UnusedResources: The resource `R.dimen.radius_card` appears to be unused  @ app/src/main/res/values/dimens.xml:19
+[Warning] UnusedResources: The resource `R.dimen.radius_dialog` appears to be unused  @ app/src/main/res/values/dimens.xml:20
+[Warning] UnusedResources: The resource `R.dimen.touch_target_min` appears to be unused  @ app/src/main/res/values/dimens.xml:23
+[Warning] UnusedResources: The resource `R.dimen.icon_button_size` appears to be unused  @ app/src/main/res/values/dimens.xml:24
+[Warning] UnusedResources: The resource `R.dimen.text_caption` appears to be unused  @ app/src/main/res/values/dimens.xml:31
+[Warning] UnusedResources: The resource `R.dimen.text_body_small` appears to be unused  @ app/src/main/res/values/dimens.xml:32
+[Warning] UnusedResources: The resource `R.dimen.text_body` appears to be unused  @ app/src/main/res/values/dimens.xml:33
+[Warning] UnusedResources: The resource `R.dimen.text_title_small` appears to be unused  @ app/src/main/res/values/dimens.xml:34
+[Warning] UnusedResources: The resource `R.dimen.text_title` appears to be unused  @ app/src/main/res/values/dimens.xml:35
+[Warning] UnusedResources: The resource `R.dimen.text_headline_small` appears to be unused  @ app/src/main/res/values/dimens.xml:36
+[Warning] UnusedResources: The resource `R.dimen.text_headline` appears to be unused  @ app/src/main/res/values/dimens.xml:37
+[Warning] UnusedResources: The resource `R.integer.motion_fast` appears to be unused  @ app/src/main/res/values/motion.xml:17
+[Warning] UnusedResources: The resource `R.integer.motion_standard` appears to be unused  @ app/src/main/res/values/motion.xml:18
+[Warning] UnusedResources: The resource `R.integer.motion_entrance` appears to be unused  @ app/src/main/res/values/motion.xml:19
+[Warning] UnusedResources: The resource `R.string.no_green_settings` appears to be unused  @ app/src/main/res/values/strings.xml:8
+[Warning] UnusedResources: The resource `R.string.no_yellow_settings` appears to be unused  @ app/src/main/res/values/strings.xml:9
+[Warning] UnusedResources: The resource `R.string.about_title` appears to be unused  @ app/src/main/res/values/strings.xml:15
+[Warning] UnusedResources: The resource `R.string.loading` appears to be unused  @ app/src/main/res/values/strings.xml:16
+[Warning] UnusedResources: The resource `R.string.error_loading` appears to be unused  @ app/src/main/res/values/strings.xml:17
+[Warning] UnusedResources: The resource `R.string.retry` appears to be unused  @ app/src/main/res/values/strings.xml:18
+[Warning] UnusedResources: The resource `R.style.SettingsRadioYellow` appears to be unused  @ app/src/main/res/values/styles.xml:26
+[Warning] UseCompoundDrawables: This tag and its children can be replaced by one `<TextView/>` and a compound drawable  @ app/src/main/res/layout/activity_game_detail.xml:138
+[Warning] UseCompoundDrawables: This tag and its children can be replaced by one `<TextView/>` and a compound drawable  @ app/src/main/res/layout/activity_game_detail.xml:200
+[Warning] UseCompoundDrawables: This tag and its children can be replaced by one `<TextView/>` and a compound drawable  @ app/src/main/res/layout/view_theme_tiles.xml:29
+[Warning] UseCompoundDrawables: This tag and its children can be replaced by one `<TextView/>` and a compound drawable  @ app/src/main/res/layout/view_theme_tiles.xml:78
+[Warning] UseCompoundDrawables: This tag and its children can be replaced by one `<TextView/>` and a compound drawable  @ app/src/main/res/layout/view_theme_tiles.xml:126
+[Warning] UselessParent: This `LinearLayout` layout or its `FrameLayout` parent is unnecessary  @ app/src/main/res/layout/activity_game_detail.xml:60
+[Warning] UselessParent: This `RadioGroup` layout or its `LinearLayout` parent is possibly unnecessary; transfer the `background` attribute to the other view  @ app/src/main/res/layout/activity_settings.xml:89
+[Warning] UselessParent: This `RadioGroup` layout or its `LinearLayout` parent is possibly unnecessary; transfer the `background` attribute to the other view  @ app/src/main/res/layout/activity_settings.xml:132
+[Warning] VectorPath: Very long vector path (904 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.  @ app/src/main/res/drawable/ic_settings.xml:9

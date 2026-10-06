@@ -1,0 +1,78 @@
+=== onboarding + theme picker
+SHOT 01-welcome (252 KB)
+TAP onboard_button (540,2187)
+SHOT 02-language (96 KB)
+TAP onboard_button (540,2187)
+SHOT 03-theme (111 KB)
+TAP tile_theme_light (224,732)
+SHOT 04-reveal-mid (101 KB)
+SHOT 05-theme-light-after (100 KB)
+after theme change we are still on the theme page: True
+TAP onboard_button (540,2187)
+SHOT 06-tier (115 KB)
+TAP option_tier_strong (540,1081)
+TAP onboard_button (540,2187)
+=== list and detail (light)
+SHOT 07-list-light (537 KB)
+visible game cards: 8
+SHOT 08-detail-light (945 KB)
+SHOT 09-detail-light-scrolled (238 KB)
+SHOT 10-list-after-back (545 KB)
+=== settings + switch to dark
+TAP settings_button (211,233)
+SHOT 11-settings-light (157 KB)
+SHOT 12-settings-light-scrolled (160 KB)
+TAP tile_theme_dark (540,601)
+SHOT 13-dark-reveal-mid (158 KB)
+SHOT 14-settings-dark (163 KB)
+SHOT 15-list-dark (534 KB)
+visible game cards: 8
+SHOT 16-detail-dark (946 KB)
+=== system theme + english
+TAP settings_button (211,233)
+TAP tile_theme_system (203,601)
+SHOT 17-settings-system-theme (158 KB)
+TAP lang_en (540,302)
+SHOT 18-settings-english (159 KB)
+SHOT 19-list-english (545 KB)
+=== search + refresh
+TAP search_box (540,386)
+SHOT 20-search-a (412 KB)
+TAP refresh_button (1001,233)
+SHOT 21-refresh-spinning (585 KB)
+SHOT 22-after-refresh (570 KB)
+=== update flow (stay vs leave settings)
+A start top: ResumedActivity=ActivityRecord{d410541 u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity t8}
+TAP settings_button (869,233)
+TAP check_update_button (539,2190)
+SHOT 30-update-clicked (165 KB)
+UPDATE A (stayed in settings): PROMPT APPEARED after 5s -> ResumedActivity=ActivityRecord{18ea756 u0 com.google.android.packageinstaller/com.android.packageinstaller.PackageInstallerActivity t9}
+SHOT 31-update-A-stay (184 KB)
+B start top: ResumedActivity=ActivityRecord{6f4b341 u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity t8}
+TAP settings_button (869,233)
+B after leaving settings, top: ResumedActivity=ActivityRecord{6f4b341 u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity t8}
+UPDATE B (left settings right after tapping): PROMPT APPEARED after 5s -> ResumedActivity=ActivityRecord{e091f34 u0 com.google.android.packageinstaller/com.android.packageinstaller.PackageInstallerActivity t10}
+SHOT 32-update-B-left-settings (427 KB)
+UPDATE RESULT: stay=True leave=True
+=== offline first run
+TAP next (540,2196) found_node=False
+TAP next (540,2187) found_node=True
+TAP next (540,2187) found_node=True
+TAP next (540,2187) found_node=True
+SHOT 40-offline-first-run (118 KB)
+SHOT 41-network-back-list (527 KB)
+=== don't keep activities
+visible game cards: 8
+SHOT 50-dk-detail (920 KB)
+SHOT 51-dk-returned (920 KB)
+DK top activity after return: ResumedActivity=ActivityRecord{6c345a7 u0 com.gamesettings.app.test/com.gamesettings.app.GameDetailActivity t12}
+=== monkey
+monkey crashed: False
+SHOT 23-after-monkey (272 KB)
+=== logs
+logcat: 3534 app lines, 23 error-ish lines
+COUNT FATAL EXCEPTION: 0
+COUNT IntentReceiverLeaked: 2
+COUNT Leaked: 0
+COUNT StrictMode: 0
+DONE

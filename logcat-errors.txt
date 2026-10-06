@@ -1,0 +1,23 @@
+10-06 03:57:49.419  1828  2489 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-06 03:57:49.419  1828  2489 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-06 03:57:50.581   524   590 V SplashScreenExceptionList: SplashScreen checking exception for package com.gamesettings.app.test (target sdk:34) -> false
+10-06 03:58:10.942   524  3954 E ActivityManager: ANR in com.google.android.gms.persistent
+10-06 03:58:10.942   524  3954 E ActivityManager:   23% 3163/com.gamesettings.app.test: 2.1% user + 21% kernel / faults: 9 minor
+10-06 03:58:21.121  3985  4107 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-06 03:58:21.121  3985  4107 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-06 03:58:21.121  3985  4107 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-06 03:58:21.121  3985  4107 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-06 03:58:21.121  3985  4107 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3002)
+10-06 03:58:21.121  3985  4107 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-06 04:00:01.516  3163  3163 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::0@0@com.gamesettings.app.test>
+10-06 04:00:03.707  3163  3163 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::1@0@com.gamesettings.app.test>
+10-06 04:00:49.954   524  1866 V SplashScreenExceptionList: SplashScreen checking exception for package com.gamesettings.app.test (target sdk:34) -> false
+10-06 04:00:50.093   524  2589 W WindowManager: Exception thrown during dispatchAppVisibility Window{5f197b2 u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity EXITING}
+10-06 04:02:18.135   524   991 V SplashScreenExceptionList: SplashScreen checking exception for package com.gamesettings.app.test (target sdk:34) -> false
+10-06 04:02:18.156   524  1769 W WindowManager: Exception thrown during dispatchAppVisibility Window{3b1e0cd u0 com.gamesettings.app.test/com.gamesettings.app.MainActivity EXITING}
+10-06 04:02:20.217  7766  7795 W ProviderInstaller: Failed to report request stats: java.lang.NoSuchMethodException: com.google.android.gms.common.security.ProviderInstallerImpl.reportRequestStats2 [class android.content.Context, long, long]
+10-06 04:03:21.417   524   620 I WindowManager: ANR in Window{f7a218f u0 NotificationShade}. Reason:Input dispatching timed out (f7a218f NotificationShade (server) is not responding. Waited 5001ms for KeyEvent(deviceId=-1, eventTime=359380000000, source=KEYBOARD, displayId=-1, action=UP, flags=0x00000008, keyCode=TV_INPUT_VGA_1(251), scanCode=0, metaState=0x00000000, repeatCount=0), policyFlags=0x6b000000)
+10-06 04:03:30.518   524  8116 E ActivityManager: ANR in com.android.systemui
+10-06 04:03:30.518   524  8116 E ActivityManager:   23% 7766/com.gamesettings.app.test: 2.6% user + 21% kernel / faults: 43435 minor 122 major
+10-06 04:03:30.518   524  8116 E ActivityManager:   27% 7766/com.gamesettings.app.test: 4.5% user + 22% kernel
+10-06 04:03:30.553  8039  8051 W Monkey  : ANR in com.android.systemui
